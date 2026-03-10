@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainLab - AI Research Laboratory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <img src="assets/logo.svg" alt="Logo" class="loader-logo">
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <img src="assets/logo.svg" alt="Logo" class="logo">
+                    <nav class="nav">
+                        <a href="research.html">Research</a>
+                        <a href="publications.html">Publications</a>
+                        <a href="education.html">Education</a>
+                        <a href="team.html">Team</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="about.html">About</a>
+                        <a href="#contact">Contacts</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="language-selector">
+                        <span class="language-text">English</span>
+                        <img src="assets/arrow.svg" alt="Arrow" class="arrow" id="languageArrow">
+                        <div class="language-dropdown" id="languageDropdown">
+                            <div class="language-option">Русский</div>
+                        </div>
+                    </div>
+                    <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <img src="assets/logo.svg" alt="Logo" class="mobile-menu-logo">
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="research.html" class="mobile-nav-link">Research</a>
+                <a href="publications.html" class="mobile-nav-link">Publications</a>
+                <a href="education.html" class="mobile-nav-link">Education</a>
+                <a href="team.html" class="mobile-nav-link">Team</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="#contact" class="mobile-nav-link">Contacts</a>
+            </nav>            <div class="mobile-menu-info">
+                <div class="mobile-menu-block">
+                    <h3 class="mobile-menu-title">Contact Us</h3>
+                    <a href="mailto:brainlab@mail.ru" class="mobile-menu-link">brainlab@mail.ru</a>
+                    <a href="tel:+79999999999" class="mobile-menu-link">+7 (999) 999 99 99</a>
+                </div>
+                
+                <div class="mobile-menu-language">
+                    <button class="mobile-language-btn">English</button>
+                    <button class="mobile-language-btn">Русский</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="hero-title">
+                        <span class="underlined">Laboratory</span><br>
+                        for Fundamental Research in Artificial Intelligence at MIPT
+                    </h1>
+                    <p class="hero-text">
+                        Advancing the mathematical foundations, algorithms, and theoretical principles of next-generation AI systems.
+                    </p>
+                </div>
+                <div class="hero-right">
+                    <img src="assets/people.png" alt="People" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="team-blocks">
+                <!-- Team Info Block -->
+                <div class="team-info-block">
+                    <div class="team-info-left">
+                        <img src="assets/boy.png" alt="Team member" class="team-image">
+                    </div>
+                    <div class="team-info-right">
+                        <p class="team-description">
+                            Our team unites researchers and students dedicated 
+                            to advancing the fundamental foundations of artificial intelligence. We combine rigorous theory with collaborative research to drive scientific excellence 
+                            and develop the next generation of AI experts.
+                        </p>
+                        <div class="team-bottom">
+                            <div class="team-avatars">
+                                <div class="avatar avatar-1"></div>
+                                <div class="avatar avatar-2"></div>
+                                <div class="avatar avatar-3"></div>
+                                <div class="avatar avatar-4"></div>
+                                <div class="avatar avatar-5"></div>
+                            </div>
+                            <button class="all-team-btn">
+                                All Team
+                                <img src="assets/arrowright.svg" alt="Arrow" class="btn-arrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards Block -->
+                <div class="cards-block">
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800" alt="Education" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Master's & PhD Programs</h3>
+                            <p class="card-text">
+                                We offer specialized graduate programs in AI theory, machine learning, and computational mathematics with world-class faculty mentorship and cutting-edge research opportunities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800" alt="Courses" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Advanced Courses</h3>
+                            <p class="card-text">
+                                Deep learning architectures, reinforcement learning, probabilistic models, and optimization theory taught by leading researchers in the field of artificial intelligence.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" alt="Research" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Research Supervision</h3>
+                            <p class="card-text">
+                                Individual mentorship from experienced researchers for bachelor's, master's, and doctoral theses in theoretical AI, neural networks, and computational intelligence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications-section">
+        <div class="container">
+            <h2 class="publications-title">Top publications</h2>
+            <div class="publications-list">
+                <div class="publication-card">
+                    <div class="publication-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800" alt="Publication" class="publication-image">
+                    </div>
+                    <div class="publication-content">
+                        <div class="publication-category">Machine Learning</div>
+                        <h3 class="publication-heading">Neural Architecture Search with Reinforcement Learning</h3>
+                        <p class="publication-text">Exploring automated methods for discovering optimal neural network architectures through reinforcement learning algorithms and theoretical analysis.</p>
+                        <div class="publication-footer">
+                            <div class="publication-avatars">
+                                <div class="pub-avatar pub-avatar-1"></div>
+                                <div class="pub-avatar pub-avatar-2"></div>
+                                <div class="pub-avatar pub-avatar-3"></div>
+                                <div class="pub-avatar pub-avatar-4"></div>
+                                <div class="pub-avatar pub-avatar-5"></div>
+                            </div>
+                            <div class="publication-info">
+                                <div class="publication-authors">
+                                    <span>A. Petrov</span>
+                                    <span class="separator"></span>
+                                    <span>M. Sokolov</span>
+                                    <span class="separator"></span>
+                                    <span>E. Ivanova</span>
+                                </div>
+                                <div class="publication-date">15 Mar 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/arrowtopright.svg" alt="Arrow" class="publication-arrow">
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800" alt="Publication" class="publication-image">
+                    </div>
+                    <div class="publication-content">
+                        <div class="publication-category">Theoretical AI</div>
+                        <h3 class="publication-heading">Convergence Properties of Adaptive Optimization Methods</h3>
+                        <p class="publication-text">Rigorous mathematical analysis of convergence guarantees for modern optimization algorithms in deep learning with non-convex objectives.</p>
+                        <div class="publication-footer">
+                            <div class="publication-avatars">
+                                <div class="pub-avatar pub-avatar-1"></div>
+                                <div class="pub-avatar pub-avatar-2"></div>
+                                <div class="pub-avatar pub-avatar-3"></div>
+                                <div class="pub-avatar pub-avatar-4"></div>
+                                <div class="pub-avatar pub-avatar-5"></div>
+                            </div>
+                            <div class="publication-info">
+                                <div class="publication-authors">
+                                    <span>N. Lebedev</span>
+                                    <span class="separator"></span>
+                                    <span>K. Smirnov</span>
+                                    <span class="separator"></span>
+                                    <span>O. Popova</span>
+                                </div>
+                                <div class="publication-date">08 Dec 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/arrowtopright.svg" alt="Arrow" class="publication-arrow">
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800" alt="Publication" class="publication-image">
+                    </div>
+                    <div class="publication-content">
+                        <div class="publication-category">Computer Vision</div>
+                        <h3 class="publication-heading">Self-Supervised Learning for Visual Representations</h3>
+                        <p class="publication-text">Novel approaches to learning robust visual features without labeled data using contrastive learning and geometric transformations.</p>
+                        <div class="publication-footer">
+                            <div class="publication-avatars">
+                                <div class="pub-avatar pub-avatar-1"></div>
+                                <div class="pub-avatar pub-avatar-2"></div>
+                                <div class="pub-avatar pub-avatar-3"></div>
+                                <div class="pub-avatar pub-avatar-4"></div>
+                                <div class="pub-avatar pub-avatar-5"></div>
+                            </div>
+                            <div class="publication-info">
+                                <div class="publication-authors">
+                                    <span>T. Kozlov</span>
+                                    <span class="separator"></span>
+                                    <span>I. Novikov</span>
+                                    <span class="separator"></span>
+                                    <span>S. Morozov</span>
+                                </div>
+                                <div class="publication-date">22 Sep 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/arrowtopright.svg" alt="Arrow" class="publication-arrow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="news-section">
+        <div class="container">
+            <h2 class="news-title">Latest news</h2>
+            <div class="news-cards">
+                <div class="news-card">
+                    <div class="news-card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800" alt="News" class="news-card-image">
+                    </div>
+                    <div class="news-card-content">
+                        <h3 class="news-card-title">International AI Conference 2024</h3>
+                        <p class="news-card-text">
+                            Our laboratory is hosting the annual International Conference on Theoretical Foundations of AI with keynote speakers from leading research institutions worldwide.
+                        </p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800" alt="News" class="news-card-image">
+                    </div>
+                    <div class="news-card-content">
+                        <h3 class="news-card-title">New Grant for Deep Learning Research</h3>
+                        <p class="news-card-text">
+                            BrainLab received a major research grant to investigate explainability in deep neural networks and develop interpretable AI systems for critical applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800" alt="News" class="news-card-image">
+                    </div>
+                    <div class="news-card-content">
+                        <h3 class="news-card-title">PhD Student Wins Best Paper Award</h3>
+                        <p class="news-card-text">
+                            Congratulations to our PhD student Maria Kuznetsova for receiving the Best Paper Award at NeurIPS 2024 for groundbreaking work on generalization theory.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-left">
+            <div class="contact-info-blocks">
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Contacts</h3>
+                    <p class="contact-address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
+                    <a href="mailto:brainlab@mail.ru" class="contact-link">brainlab@mail.ru</a>
+                    <a href="tel:+79999999999" class="contact-link">+7 (999) 999 99 99</a>
+                </div>
+
+                <div class="contact-block">
+                    <h3 class="contact-block-title">BrainLab on social media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span>Telegram</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>X (Twitter)</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Habr</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Vc</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-block">
+                    <p class="copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <div class="contact-form-wrapper">
+                <h3 class="form-title">Fill out the form and leave a request</h3>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">NAME</label>
+                        <input type="text" class="form-input" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">PHONE</label>
+                        <input type="tel" class="form-input" placeholder="Enter your phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">EMAIL</label>
+                        <input type="email" class="form-input" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="terms" class="checkbox-input">
+                        <label for="terms" class="checkbox-label">
+                            I agree to <span class="underline-text">Terms of Service</span> and <span class="underline-text">Privacy Policy</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

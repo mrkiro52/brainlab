@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - BrainLab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <img src="assets/logo.svg" alt="Logo" class="logo">
+                    <nav class="nav">
+                        <a href="research.html">Research</a>
+                        <a href="publications.html">Publications</a>
+                        <a href="education.html">Education</a>
+                        <a href="team.html" class="active">Team</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="about.html">About</a>
+                        <a href="#contact">Contacts</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="language-selector">
+                        <span class="language-text">English</span>
+                        <img src="assets/arrow.svg" alt="Arrow" class="arrow" id="languageArrow">
+                        <div class="language-dropdown" id="languageDropdown">
+                            <div class="language-option">Русский</div>
+                        </div>
+                    </div>
+                    <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <img src="assets/logo.svg" alt="Logo" class="mobile-menu-logo">
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="research.html" class="mobile-nav-link">Research</a>
+                <a href="publications.html" class="mobile-nav-link">Publications</a>
+                <a href="education.html" class="mobile-nav-link">Education</a>
+                <a href="team.html" class="mobile-nav-link">Team</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="#contact" class="mobile-nav-link">Contacts</a>
+            </nav>
+            
+            <div class="mobile-menu-contacts">
+                <a href="mailto:brainlab@mail.ru" class="mobile-menu-link">brainlab@mail.ru</a>
+                <a href="tel:+79999999999" class="mobile-menu-link">+7 (999) 999 99 99</a>
+            </div>
+            
+            <div class="mobile-menu-language">
+                <button class="mobile-language-btn">English</button>
+                <button class="mobile-language-btn">Русский</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Hero Section -->
+    <section class="team-hero">
+        <div class="container">
+            <h1 class="team-title">
+                Our <span class="underlined">Team</span>
+            </h1>
+            <p class="team-subtitle">
+                Meet the talented researchers, engineers, and scholars pushing the boundaries of artificial intelligence at BrainLab.
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Grid Section -->
+    <section class="team-section">
+        <div class="container">
+            <!-- Leadership -->
+            <div class="team-category">
+                <h2 class="category-title">Leadership</h2>
+                <div class="team-grid">
+                    <div class="team-card" data-member="1">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600" alt="Dr. Anna Petrova" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Dr. Anna Petrova</h3>
+                            <p class="team-card-position">Laboratory Director</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="2">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600" alt="Prof. Mikhail Sokolov" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Prof. Mikhail Sokolov</h3>
+                            <p class="team-card-position">Deputy Director</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="3">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600" alt="Dr. Elena Ivanova" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Dr. Elena Ivanova</h3>
+                            <p class="team-card-position">Research Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Senior Researchers -->
+            <div class="team-category">
+                <h2 class="category-title">Senior Researchers</h2>
+                <div class="team-grid">
+                    <div class="team-card" data-member="4">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600" alt="Dr. Alexei Volkov" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Dr. Alexei Volkov</h3>
+                            <p class="team-card-position">Deep Learning Theory</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="5">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=600" alt="Dr. Natalia Fedorova" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Dr. Natalia Fedorova</h3>
+                            <p class="team-card-position">Computer Vision</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="6">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600" alt="Dr. Dmitry Kuznetsov" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Dr. Dmitry Kuznetsov</h3>
+                            <p class="team-card-position">Natural Language Processing</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="7">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600" alt="Dr. Olga Morozova" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Dr. Olga Morozova</h3>
+                            <p class="team-card-position">Reinforcement Learning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Researchers -->
+            <div class="team-category">
+                <h2 class="category-title">Researchers</h2>
+                <div class="team-grid">
+                    <div class="team-card" data-member="8">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600" alt="Ivan Smirnov" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Ivan Smirnov</h3>
+                            <p class="team-card-position">Machine Learning Engineer</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="9">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600" alt="Tatiana Orlova" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Tatiana Orlova</h3>
+                            <p class="team-card-position">Research Scientist</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="10">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600" alt="Sergey Popov" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Sergey Popov</h3>
+                            <p class="team-card-position">AI Research Engineer</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="11">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600" alt="Maria Volkova" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Maria Volkova</h3>
+                            <p class="team-card-position">Research Scientist</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="12">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600" alt="Pavel Lebedev" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Pavel Lebedev</h3>
+                            <p class="team-card-position">Machine Learning Engineer</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="13">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600" alt="Victoria Romanova" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Victoria Romanova</h3>
+                            <p class="team-card-position">Research Scientist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PhD Students -->
+            <div class="team-category">
+                <h2 class="category-title">PhD Students</h2>
+                <div class="team-grid">
+                    <div class="team-card" data-member="14">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=600" alt="Andrei Novikov" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Andrei Novikov</h3>
+                            <p class="team-card-position">PhD Student</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="15">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600" alt="Anastasia Kozlova" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Anastasia Kozlova</h3>
+                            <p class="team-card-position">PhD Student</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="16">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600" alt="Maxim Vasiliev" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Maxim Vasiliev</h3>
+                            <p class="team-card-position">PhD Student</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-member="17">
+                        <div class="team-card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=600" alt="Ekaterina Sokolova" class="team-card-image">
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Ekaterina Sokolova</h3>
+                            <p class="team-card-position">PhD Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Member Modal -->
+    <div class="team-modal" id="teamModal">
+        <div class="team-modal-overlay" id="teamModalOverlay"></div>
+        <div class="team-modal-content">
+            <button class="team-modal-close" id="teamModalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="team-modal-body">
+                <div class="team-modal-left">
+                    <img src="" alt="" class="team-modal-image" id="modalImage">
+                </div>
+                <div class="team-modal-right">
+                    <h2 class="team-modal-name" id="modalName"></h2>
+                    <p class="team-modal-position" id="modalPosition"></p>
+                    <div class="team-modal-info" id="modalInfo"></div>
+                    <div class="team-modal-links" id="modalLinks"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-left">
+            <div class="contact-info-blocks">
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Contacts</h3>
+                    <p class="contact-address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
+                    <a href="mailto:brainlab@mail.ru" class="contact-link">brainlab@mail.ru</a>
+                    <a href="tel:+79999999999" class="contact-link">+7 (999) 999 99 99</a>
+                </div>
+
+                <div class="contact-block">
+                    <h3 class="contact-block-title">BrainLab on social media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span>Telegram</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>X (Twitter)</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Habr</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Vc</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-block">
+                    <p class="copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <div class="contact-form-wrapper">
+                <h3 class="form-title">Fill out the form and leave a request</h3>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">NAME</label>
+                        <input type="text" class="form-input" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">PHONE</label>
+                        <input type="tel" class="form-input" placeholder="Enter your phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">EMAIL</label>
+                        <input type="email" class="form-input" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="terms" class="checkbox-input">
+                        <label for="terms" class="checkbox-label">
+                            I agree to <span class="underline-text">Terms of Service</span> and <span class="underline-text">Privacy Policy</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="team-script.js"></script>
+</body>
+</html>

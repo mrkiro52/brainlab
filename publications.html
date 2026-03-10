@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - BrainLab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="Logo" class="logo">
+                    </a>
+                    <nav class="nav">
+                        <a href="research.html">Research</a>
+                        <a href="publications.html" class="active">Publications</a>
+                        <a href="education.html">Education</a>
+                        <a href="team.html">Team</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="about.html">About</a>
+                        <a href="#contact">Contacts</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="language-selector">
+                        <span class="language-text">English</span>
+                        <img src="assets/arrow.svg" alt="Arrow" class="arrow" id="languageArrow">
+                        <div class="language-dropdown" id="languageDropdown">
+                            <div class="language-option">Русский</div>
+                        </div>
+                    </div>
+                    <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <img src="assets/logo.svg" alt="Logo" class="mobile-menu-logo">
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+                            <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="research.html" class="mobile-nav-link">Research</a>
+                    <a href="publications.html" class="mobile-nav-link">Publications</a>
+                    <a href="education.html" class="mobile-nav-link">Education</a>
+                    <a href="team.html" class="mobile-nav-link">Team</a>
+                    <a href="projects.html" class="mobile-nav-link">Projects</a>
+                    <a href="#contact" class="mobile-nav-link">Contacts</a>
+                </nav>
+            
+            <div class="mobile-menu-info">
+                <div class="mobile-menu-block">
+                    <h3 class="mobile-menu-title">Contact Us</h3>
+                    <a href="mailto:brainlab@mail.ru" class="mobile-menu-link">brainlab@mail.ru</a>
+                    <a href="tel:+79999999999" class="mobile-menu-link">+7 (999) 999 99 99</a>
+                </div>
+                
+                <div class="mobile-menu-language">
+                    <button class="mobile-language-btn">English</button>
+                    <button class="mobile-language-btn">Русский</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publications Hero Section -->
+    <section class="publications-hero">
+        <div class="container">
+            <h1 class="publications-page-title">
+                <span class="underlined">Publications</span>
+            </h1>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-wrapper">
+                <div class="filter-group">
+                    <label class="filter-label">Year</label>
+                    <div class="filter-tags">
+                        <button class="filter-tag active">All</button>
+                        <button class="filter-tag">2024</button>
+                        <button class="filter-tag">2023</button>
+                        <button class="filter-tag">2022</button>
+                        <button class="filter-tag">2021</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Research Area</label>
+                    <div class="filter-tags">
+                        <button class="filter-tag active">All</button>
+                        <button class="filter-tag">Deep Learning</button>
+                        <button class="filter-tag">Computer Vision</button>
+                        <button class="filter-tag">NLP</button>
+                        <button class="filter-tag">Reinforcement Learning</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications List Section -->
+    <section class="publications-list-section">
+        <div class="container">
+            <div class="pubs-list">
+                <a href="publication-detail.html" class="pub-item">
+                    <div class="pub-item-header">
+                        <h3 class="pub-item-title">Neural Architecture Search with Reinforcement Learning for Image Classification</h3>
+                        <div class="pub-badges">
+                            <span class="pub-badge conference">NeurIPS 2024</span>
+                            <span class="pub-badge level-a">A*</span>
+                        </div>
+                    </div>
+                    <div class="pub-item-authors">
+                        <span class="pub-author">A. Petrov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">M. Sokolov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">E. Ivanova</span>
+                    </div>
+                    <p class="pub-item-description">
+                        We propose a novel approach to neural architecture search using reinforcement learning techniques. Our method automatically discovers high-performing CNN architectures for image classification tasks, achieving state-of-the-art results while reducing search time by 40%.
+                    </p>
+                    <div class="pub-item-meta">
+                        <div class="pub-tags">
+                            <span class="pub-tag">Deep Learning</span>
+                            <span class="pub-tag">Computer Vision</span>
+                            <span class="pub-tag">2024</span>
+                        </div>
+                        <img src="assets/arrowtopright.svg" alt="Arrow" class="pub-arrow">
+                    </div>
+                </a>
+
+                <a href="publication-detail.html" class="pub-item">
+                    <div class="pub-item-header">
+                        <h3 class="pub-item-title">Convergence Properties of Adaptive Optimization Methods in Non-Convex Settings</h3>
+                        <div class="pub-badges">
+                            <span class="pub-badge conference">ICML 2024</span>
+                            <span class="pub-badge level-a">A*</span>
+                        </div>
+                    </div>
+                    <div class="pub-item-authors">
+                        <span class="pub-author">N. Lebedev</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">K. Smirnov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">O. Popova</span>
+                    </div>
+                    <p class="pub-item-description">
+                        Rigorous mathematical analysis of convergence guarantees for modern optimization algorithms in deep learning. We establish theoretical bounds for adaptive methods like Adam and RMSprop in non-convex settings with practical implications.
+                    </p>
+                    <div class="pub-item-meta">
+                        <div class="pub-tags">
+                            <span class="pub-tag">Deep Learning</span>
+                            <span class="pub-tag">Optimization</span>
+                            <span class="pub-tag">2024</span>
+                        </div>
+                        <img src="assets/arrowtopright.svg" alt="Arrow" class="pub-arrow">
+                    </div>
+                </a>
+
+                <a href="publication-detail.html" class="pub-item">
+                    <div class="pub-item-header">
+                        <h3 class="pub-item-title">Self-Supervised Learning for Visual Representations with Contrastive Methods</h3>
+                        <div class="pub-badges">
+                            <span class="pub-badge conference">CVPR 2023</span>
+                            <span class="pub-badge level-a">A*</span>
+                        </div>
+                    </div>
+                    <div class="pub-item-authors">
+                        <span class="pub-author">T. Kozlov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">I. Novikov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">S. Morozov</span>
+                    </div>
+                    <p class="pub-item-description">
+                        Novel approaches to learning robust visual features without labeled data using contrastive learning and geometric transformations. Our method achieves superior performance on downstream tasks with minimal fine-tuning.
+                    </p>
+                    <div class="pub-item-meta">
+                        <div class="pub-tags">
+                            <span class="pub-tag">Computer Vision</span>
+                            <span class="pub-tag">Self-Supervised</span>
+                            <span class="pub-tag">2023</span>
+                        </div>
+                        <img src="assets/arrowtopright.svg" alt="Arrow" class="pub-arrow">
+                    </div>
+                </a>
+
+                <a href="publication-detail.html" class="pub-item">
+                    <div class="pub-item-header">
+                        <h3 class="pub-item-title">Efficient Transformers for Natural Language Understanding Tasks</h3>
+                        <div class="pub-badges">
+                            <span class="pub-badge conference">ACL 2023</span>
+                            <span class="pub-badge level-a">A</span>
+                        </div>
+                    </div>
+                    <div class="pub-item-authors">
+                        <span class="pub-author">D. Volkov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">V. Fedorov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">A. Kuznetsov</span>
+                    </div>
+                    <p class="pub-item-description">
+                        Introducing efficient transformer architectures that reduce computational complexity while maintaining performance on natural language understanding benchmarks. Achieves 3x speedup with comparable accuracy to standard models.
+                    </p>
+                    <div class="pub-item-meta">
+                        <div class="pub-tags">
+                            <span class="pub-tag">NLP</span>
+                            <span class="pub-tag">Transformers</span>
+                            <span class="pub-tag">2023</span>
+                        </div>
+                        <img src="assets/arrowtopright.svg" alt="Arrow" class="pub-arrow">
+                    </div>
+                </a>
+
+                <a href="publication-detail.html" class="pub-item">
+                    <div class="pub-item-header">
+                        <h3 class="pub-item-title">Theoretical Foundations of Deep Reinforcement Learning in Continuous Spaces</h3>
+                        <div class="pub-badges">
+                            <span class="pub-badge conference">ICLR 2022</span>
+                            <span class="pub-badge level-a">A*</span>
+                        </div>
+                    </div>
+                    <div class="pub-item-authors">
+                        <span class="pub-author">E. Ivanova</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">M. Sokolov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">A. Petrov</span>
+                    </div>
+                    <p class="pub-item-description">
+                        Comprehensive theoretical analysis of deep reinforcement learning algorithms in continuous action and state spaces. We provide convergence guarantees and sample complexity bounds for policy gradient methods.
+                    </p>
+                    <div class="pub-item-meta">
+                        <div class="pub-tags">
+                            <span class="pub-tag">Reinforcement Learning</span>
+                            <span class="pub-tag">Theory</span>
+                            <span class="pub-tag">2022</span>
+                        </div>
+                        <img src="assets/arrowtopright.svg" alt="Arrow" class="pub-arrow">
+                    </div>
+                </a>
+
+                <a href="publication-detail.html" class="pub-item">
+                    <div class="pub-item-header">
+                        <h3 class="pub-item-title">Interpretable Machine Learning: Methods and Applications</h3>
+                        <div class="pub-badges">
+                            <span class="pub-badge conference">AAAI 2022</span>
+                            <span class="pub-badge level-a">A</span>
+                        </div>
+                    </div>
+                    <div class="pub-item-authors">
+                        <span class="pub-author">K. Smirnov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">N. Lebedev</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">T. Kozlov</span>
+                    </div>
+                    <p class="pub-item-description">
+                        Survey of interpretable machine learning methods with applications to critical domains. We present a unified framework for understanding model decisions and provide practical tools for explanation generation and validation.
+                    </p>
+                    <div class="pub-item-meta">
+                        <div class="pub-tags">
+                            <span class="pub-tag">Explainable AI</span>
+                            <span class="pub-tag">Interpretability</span>
+                            <span class="pub-tag">2022</span>
+                        </div>
+                        <img src="assets/arrowtopright.svg" alt="Arrow" class="pub-arrow">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-left">
+            <div class="contact-info-blocks">
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Contacts</h3>
+                    <p class="contact-address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
+                    <a href="mailto:brainlab@mail.ru" class="contact-link">brainlab@mail.ru</a>
+                    <a href="tel:+79999999999" class="contact-link">+7 (999) 999 99 99</a>
+                </div>
+
+                <div class="contact-block">
+                    <h3 class="contact-block-title">BrainLab on social media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span>Telegram</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>X (Twitter)</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Habr</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Vc</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-block">
+                    <p class="copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <div class="contact-form-wrapper">
+                <h3 class="form-title">Fill out the form and leave a request</h3>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">NAME</label>
+                        <input type="text" class="form-input" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">PHONE</label>
+                        <input type="tel" class="form-input" placeholder="Enter your phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">EMAIL</label>
+                        <input type="email" class="form-input" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="terms" class="checkbox-input">
+                        <label for="terms" class="checkbox-label">
+                            I agree to <span class="underline-text">Terms of Service</span> and <span class="underline-text">Privacy Policy</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

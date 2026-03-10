@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - BrainLab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <img src="assets/logo.svg" alt="Logo" class="logo">
+                    <nav class="nav">
+                        <a href="research.html">Research</a>
+                        <a href="publications.html">Publications</a>
+                        <a href="education.html">Education</a>
+                        <a href="team.html">Team</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="about.html" class="active">About</a>
+                        <a href="#contact">Contacts</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="language-selector">
+                        <span class="language-text">English</span>
+                        <img src="assets/arrow.svg" alt="Arrow" class="arrow" id="languageArrow">
+                        <div class="language-dropdown" id="languageDropdown">
+                            <div class="language-option">Русский</div>
+                        </div>
+                    </div>
+                    <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <img src="assets/logo.svg" alt="Logo" class="mobile-menu-logo">
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="research.html" class="mobile-nav-link">Research</a>
+                <a href="publications.html" class="mobile-nav-link">Publications</a>
+                <a href="education.html" class="mobile-nav-link">Education</a>
+                <a href="team.html" class="mobile-nav-link">Team</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="#contact" class="mobile-nav-link">Contacts</a>
+            </nav>
+            
+            <div class="mobile-menu-contacts">
+                <a href="mailto:brainlab@mail.ru" class="mobile-menu-link">brainlab@mail.ru</a>
+                <a href="tel:+79999999999" class="mobile-menu-link">+7 (999) 999 99 99</a>
+            </div>
+            
+            <div class="mobile-menu-language">
+                <button class="mobile-language-btn">English</button>
+                <button class="mobile-language-btn">Русский</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1 class="about-title">
+                About <span class="underlined">BrainLab</span>
+            </h1>
+            <p class="about-subtitle">
+                Pioneering the future of artificial intelligence through cutting-edge research and innovation
+            </p>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="about-content-section">
+        <div class="container">
+            <div class="about-content-grid">
+                <!-- Main Content -->
+                <div class="about-main-content">
+                    <div class="about-block">
+                        <h2 class="about-section-title">Our Mission</h2>
+                        <p class="about-text">
+                            BrainLab is a leading artificial intelligence research laboratory dedicated to advancing the frontiers of machine learning, deep learning, and AI applications. Founded in 2018, we bring together world-class researchers, engineers, and innovators to tackle the most challenging problems in modern AI.
+                        </p>
+                        <p class="about-text">
+                            Our mission is to develop intelligent systems that can learn, reason, and adapt to solve real-world problems across various domains including healthcare, robotics, natural language processing, and computer vision. We believe in the transformative power of AI to improve human lives and create a better future for all.
+                        </p>
+                    </div>
+
+                    <div class="about-block">
+                        <h2 class="about-section-title">What We Do</h2>
+                        <p class="about-text">
+                            At BrainLab, we pursue fundamental research in artificial intelligence while maintaining a strong focus on practical applications. Our research spans multiple areas of AI, from theoretical foundations to applied systems that make a real-world impact.
+                        </p>
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <div class="about-feature-icon">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                        <rect width="40" height="40" rx="8" fill="rgba(240, 201, 135, 0.3)"/>
+                                        <path d="M20 12V28M12 20H28" stroke="rgba(133, 76, 101, 1)" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="about-feature-content">
+                                    <h3 class="about-feature-title">Fundamental Research</h3>
+                                    <p class="about-feature-text">
+                                        Exploring new algorithms, architectures, and theoretical frameworks that push the boundaries of what AI can achieve.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="about-feature">
+                                <div class="about-feature-icon">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                        <rect width="40" height="40" rx="8" fill="rgba(157, 225, 252, 0.3)"/>
+                                        <circle cx="20" cy="20" r="6" stroke="rgba(133, 76, 101, 1)" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="about-feature-content">
+                                    <h3 class="about-feature-title">Applied AI Solutions</h3>
+                                    <p class="about-feature-text">
+                                        Developing practical AI systems for healthcare diagnostics, autonomous systems, and intelligent decision support.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="about-feature">
+                                <div class="about-feature-icon">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                        <rect width="40" height="40" rx="8" fill="rgba(240, 201, 135, 0.3)"/>
+                                        <path d="M14 20L18 24L26 16" stroke="rgba(133, 76, 101, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="about-feature-content">
+                                    <h3 class="about-feature-title">Education & Outreach</h3>
+                                    <p class="about-feature-text">
+                                        Training the next generation of AI researchers through courses, workshops, and mentorship programs.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="about-feature">
+                                <div class="about-feature-icon">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                        <rect width="40" height="40" rx="8" fill="rgba(157, 225, 252, 0.3)"/>
+                                        <path d="M20 14V20L24 24" stroke="rgba(133, 76, 101, 1)" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="about-feature-content">
+                                    <h3 class="about-feature-title">Industry Collaboration</h3>
+                                    <p class="about-feature-text">
+                                        Partnering with leading companies to translate research breakthroughs into real-world applications.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-block">
+                        <h2 class="about-section-title">Our Values</h2>
+                        <p class="about-text">
+                            We are driven by a set of core values that guide everything we do:
+                        </p>
+                        <ul class="about-list">
+                            <li><strong>Excellence:</strong> We strive for the highest standards in research quality and scientific rigor.</li>
+                            <li><strong>Innovation:</strong> We embrace bold ideas and aren't afraid to challenge conventional wisdom.</li>
+                            <li><strong>Collaboration:</strong> We believe the best results come from diverse teams working together.</li>
+                            <li><strong>Ethics:</strong> We are committed to developing AI responsibly with consideration for societal impact.</li>
+                            <li><strong>Openness:</strong> We share our findings through publications, open-source software, and educational initiatives.</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-block">
+                        <h2 class="about-section-title">Our Impact</h2>
+                        <div class="about-stats">
+                            <div class="about-stat">
+                                <div class="about-stat-number">150+</div>
+                                <div class="about-stat-label">Research Papers Published</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number">25+</div>
+                                <div class="about-stat-label">Research Projects</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number">40+</div>
+                                <div class="about-stat-label">Team Members</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number">15+</div>
+                                <div class="about-stat-label">Industry Partners</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-block">
+                        <h2 class="about-section-title">Join Us</h2>
+                        <p class="about-text">
+                            We're always looking for talented researchers, engineers, and students who are passionate about advancing AI. Whether you're interested in pursuing a PhD, joining our research team, or collaborating on projects, we'd love to hear from you.
+                        </p>
+                        <p class="about-text">
+                            Check out our <a href="team.html" class="about-inline-link">team page</a> to learn more about who we are, explore our <a href="publications.html" class="about-inline-link">publications</a> to see what we're working on, and visit our <a href="education.html" class="about-inline-link">education page</a> to learn about opportunities to study with us.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="about-sidebar">
+                    <div class="about-sidebar-block">
+                        <h3 class="about-sidebar-title">Quick Links</h3>
+                        <div class="about-sidebar-links">
+                            <a href="research.html" class="about-sidebar-link">
+                                <span>Research Areas</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                            <a href="publications.html" class="about-sidebar-link">
+                                <span>Publications</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                            <a href="projects.html" class="about-sidebar-link">
+                                <span>Current Projects</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                            <a href="team.html" class="about-sidebar-link">
+                                <span>Meet Our Team</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                            <a href="education.html" class="about-sidebar-link">
+                                <span>Education Programs</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                            <a href="blog.html" class="about-sidebar-link">
+                                <span>Blog & Insights</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about-sidebar-block">
+                        <h3 class="about-sidebar-title">Connect With Us</h3>
+                        <div class="about-social-links">
+                            <a href="#" class="about-social-link">
+                                <span>Telegram</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                            <a href="#" class="about-social-link">
+                                <span>X (Twitter)</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                            <a href="#" class="about-social-link">
+                                <span>LinkedIn</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                            <a href="#" class="about-social-link">
+                                <span>GitHub</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                            <a href="#" class="about-social-link">
+                                <span>YouTube</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                            <a href="#" class="about-social-link">
+                                <span>Habr</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                            <a href="#" class="about-social-link">
+                                <span>Vc.ru</span>
+                                <img src="assets/arrowlong.svg" alt="Arrow" class="sidebar-arrow">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about-sidebar-block about-sidebar-highlight">
+                        <h3 class="about-sidebar-title">Location</h3>
+                        <p class="about-sidebar-text">
+                            Moscow region, Dolgoprudny<br>
+                            Institutsky per., 7<br>
+                            Auditorium building, room 412
+                        </p>
+                        <div class="about-sidebar-contact">
+                            <a href="mailto:brainlab@mail.ru" class="about-sidebar-email">brainlab@mail.ru</a>
+                            <a href="tel:+79999999999" class="about-sidebar-phone">+7 (999) 999 99 99</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-left">
+            <div class="contact-info-blocks">
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Contacts</h3>
+                    <p class="contact-address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
+                    <a href="mailto:brainlab@mail.ru" class="contact-link">brainlab@mail.ru</a>
+                    <a href="tel:+79999999999" class="contact-link">+7 (999) 999 99 99</a>
+                </div>
+
+                <div class="contact-block">
+                    <h3 class="contact-block-title">BrainLab on social media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span>Telegram</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>X (Twitter)</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Habr</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Vc</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-block">
+                    <p class="copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <div class="contact-form-wrapper">
+                <h3 class="form-title">Fill out the form and leave a request</h3>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">NAME</label>
+                        <input type="text" class="form-input" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">PHONE</label>
+                        <input type="tel" class="form-input" placeholder="Enter your phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">EMAIL</label>
+                        <input type="email" class="form-input" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="terms" class="checkbox-input">
+                        <label for="terms" class="checkbox-label">
+                            I agree to <span class="underline-text">Terms of Service</span> and <span class="underline-text">Privacy Policy</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Learning Theory - BrainLab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="Logo" class="logo">
+                    </a>
+                    <nav class="nav">
+                        <a href="research.html">Research</a>
+                        <a href="publications.html">Publications</a>
+                        <a href="education.html">Education</a>
+                        <a href="team.html">Team</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="about.html">About</a>
+                        <a href="#contact">Contacts</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="language-selector">
+                        <span class="language-text">English</span>
+                        <img src="assets/arrow.svg" alt="Arrow" class="arrow" id="languageArrow">
+                        <div class="language-dropdown" id="languageDropdown">
+                            <div class="language-option">Русский</div>
+                        </div>
+                    </div>
+                    <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <img src="assets/logo.svg" alt="Logo" class="mobile-menu-logo">
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="research.html" class="mobile-nav-link">Research</a>
+                <a href="publications.html" class="mobile-nav-link">Publications</a>
+                <a href="education.html" class="mobile-nav-link">Education</a>
+                <a href="team.html" class="mobile-nav-link">Team</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="#contact" class="mobile-nav-link">Contacts</a>
+            </nav>            <div class="mobile-menu-info">
+                <div class="mobile-menu-block">
+                    <h3 class="mobile-menu-title">Contact Us</h3>
+                    <a href="mailto:brainlab@mail.ru" class="mobile-menu-link">brainlab@mail.ru</a>
+                    <a href="tel:+79999999999" class="mobile-menu-link">+7 (999) 999 99 99</a>
+                </div>
+                
+                <div class="mobile-menu-language">
+                    <button class="mobile-language-btn">English</button>
+                    <button class="mobile-language-btn">Русский</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research Area Hero -->
+    <section class="research-area-hero">
+        <div class="container">
+            <a href="research.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Back to Research Areas
+            </a>
+            <h1 class="research-area-title">
+                <span class="underlined">Deep Learning</span> Theory
+            </h1>
+            <p class="research-area-subtitle">
+                Investigating theoretical foundations of deep neural networks, convergence properties, and generalization bounds
+            </p>
+        </div>
+    </section>
+
+    <!-- Research Area Content -->
+    <section class="research-area-content">
+        <div class="container">
+            <div class="research-area-layout">
+                <div class="research-area-main">
+                    <div class="research-area-block">
+                        <h2 class="research-area-heading">Overview</h2>
+                        <p class="research-area-text">
+                            Deep learning has revolutionized artificial intelligence across numerous domains, yet many fundamental questions about why and how deep neural networks work remain open. Our research group focuses on developing rigorous mathematical frameworks to understand the theoretical underpinnings of deep learning systems.
+                        </p>
+                        <p class="research-area-text">
+                            We investigate convergence properties of training algorithms, generalization capabilities of overparameterized networks, and the role of architecture in learning representations. Our work bridges the gap between empirical success and theoretical understanding, providing both practical insights and fundamental contributions to machine learning theory.
+                        </p>
+                    </div>
+
+                    <div class="research-area-block">
+                        <h2 class="research-area-heading">Key Research Directions</h2>
+                        <div class="research-directions">
+                            <div class="direction-item">
+                                <div class="direction-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="direction-content">
+                                    <h3 class="direction-title">Optimization Landscapes</h3>
+                                    <p class="direction-text">
+                                        Analyzing the geometry of loss surfaces in deep networks, understanding critical points, and developing provable optimization guarantees for neural network training algorithms.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="direction-item">
+                                <div class="direction-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="direction-content">
+                                    <h3 class="direction-title">Generalization Theory</h3>
+                                    <p class="direction-text">
+                                        Establishing theoretical bounds on generalization error, investigating the role of implicit regularization, and understanding why overparameterized networks avoid overfitting.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="direction-item">
+                                <div class="direction-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M9 21V9" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="direction-content">
+                                    <h3 class="direction-title">Architecture Design Principles</h3>
+                                    <p class="direction-text">
+                                        Deriving theoretical principles for designing neural architectures, analyzing the expressive power of different network structures, and understanding the role of depth and width.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="direction-item">
+                                <div class="direction-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H19C20.1046 18 21 17.1046 21 16Z" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M12 6V2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        <path d="M12 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="direction-content">
+                                    <h3 class="direction-title">Training Dynamics</h3>
+                                    <p class="direction-text">
+                                        Studying the trajectory of gradient-based optimization in neural networks, analyzing convergence rates, and understanding the interplay between learning rate, batch size, and model performance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-area-block">
+                        <h2 class="research-area-heading">Research Methodology</h2>
+                        <p class="research-area-text">
+                            Our approach combines rigorous mathematical analysis with carefully designed experiments. We develop theoretical frameworks grounded in optimization theory, statistical learning theory, and functional analysis, then validate our predictions through controlled empirical studies.
+                        </p>
+                        <p class="research-area-text">
+                            We collaborate closely with practitioners to ensure our theoretical insights address real-world challenges in deep learning. This feedback loop between theory and practice drives our research agenda and ensures relevance to the broader machine learning community.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="research-area-sidebar">
+                    <div class="research-area-info-card">
+                        <h3 class="research-area-info-title">Research Metrics</h3>
+                        <div class="research-metric">
+                            <span class="metric-value">15+</span>
+                            <span class="metric-label">Publications</span>
+                        </div>
+                        <div class="research-metric">
+                            <span class="metric-value">8</span>
+                            <span class="metric-label">Active Projects</span>
+                        </div>
+                        <div class="research-metric">
+                            <span class="metric-value">12</span>
+                            <span class="metric-label">Researchers</span>
+                        </div>
+                    </div>
+
+                    <div class="research-area-info-card">
+                        <h3 class="research-area-info-title">Key Collaborators</h3>
+                        <ul class="collaborators-list">
+                            <li>MIT Computer Science</li>
+                            <li>Stanford AI Lab</li>
+                            <li>DeepMind Research</li>
+                            <li>Google Brain</li>
+                        </ul>
+                    </div>
+
+                    <div class="research-area-info-card">
+                        <h3 class="research-area-info-title">Related Topics</h3>
+                        <div class="related-topics">
+                            <a href="#" class="topic-link">Optimization</a>
+                            <a href="#" class="topic-link">Neural Networks</a>
+                            <a href="#" class="topic-link">Statistical Learning</a>
+                            <a href="#" class="topic-link">Generalization</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Publications -->
+    <section class="related-publications-section">
+        <div class="container">
+            <h2 class="section-title">Latest Publications</h2>
+            <div class="related-pubs-list">
+                <a href="publication-detail.html" class="pub-item">
+                    <div class="pub-item-header">
+                        <h3 class="pub-item-title">Neural Architecture Search with Reinforcement Learning for Image Classification</h3>
+                        <div class="pub-badges">
+                            <span class="pub-badge conference">NeurIPS 2024</span>
+                            <span class="pub-badge level-a">A*</span>
+                        </div>
+                    </div>
+                    <div class="pub-item-authors">
+                        <span class="pub-author">A. Petrov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">M. Sokolov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">E. Ivanova</span>
+                    </div>
+                    <p class="pub-item-description">
+                        We propose a novel approach to neural architecture search using reinforcement learning techniques. Our method automatically discovers high-performing CNN architectures for image classification tasks, achieving state-of-the-art results while reducing search time by 40%.
+                    </p>
+                    <div class="pub-item-meta">
+                        <div class="pub-tags">
+                            <span class="pub-tag">Deep Learning</span>
+                            <span class="pub-tag">Computer Vision</span>
+                            <span class="pub-tag">2024</span>
+                        </div>
+                        <img src="assets/arrowtopright.svg" alt="Arrow" class="pub-arrow">
+                    </div>
+                </a>
+
+                <a href="publication-detail.html" class="pub-item">
+                    <div class="pub-item-header">
+                        <h3 class="pub-item-title">Convergence Properties of Adaptive Optimization Methods in Non-Convex Settings</h3>
+                        <div class="pub-badges">
+                            <span class="pub-badge conference">ICML 2024</span>
+                            <span class="pub-badge level-a">A*</span>
+                        </div>
+                    </div>
+                    <div class="pub-item-authors">
+                        <span class="pub-author">L. Kuznetsov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">O. Fedorova</span>
+                    </div>
+                    <p class="pub-item-description">
+                        This work presents a rigorous mathematical analysis of popular adaptive optimization algorithms such as Adam and RMSprop. We establish convergence guarantees under realistic non-convex conditions and provide insights into their behavior in practical deep learning scenarios.
+                    </p>
+                    <div class="pub-item-meta">
+                        <div class="pub-tags">
+                            <span class="pub-tag">Optimization</span>
+                            <span class="pub-tag">Theory</span>
+                            <span class="pub-tag">2024</span>
+                        </div>
+                        <img src="assets/arrowtopright.svg" alt="Arrow" class="pub-arrow">
+                    </div>
+                </a>
+
+                <a href="publication-detail.html" class="pub-item">
+                    <div class="pub-item-header">
+                        <h3 class="pub-item-title">Self-Supervised Learning for Visual Representations with Contrastive Methods</h3>
+                        <div class="pub-badges">
+                            <span class="pub-badge conference">CVPR 2024</span>
+                            <span class="pub-badge level-a">A*</span>
+                        </div>
+                    </div>
+                    <div class="pub-item-authors">
+                        <span class="pub-author">N. Volkov</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">T. Morozova</span>
+                        <span class="pub-separator">·</span>
+                        <span class="pub-author">I. Smirnov</span>
+                    </div>
+                    <p class="pub-item-description">
+                        We introduce an improved self-supervised learning framework based on contrastive learning principles. Our approach learns robust visual representations without labels, achieving competitive performance on downstream tasks including object detection and semantic segmentation.
+                    </p>
+                    <div class="pub-item-meta">
+                        <div class="pub-tags">
+                            <span class="pub-tag">Computer Vision</span>
+                            <span class="pub-tag">Self-Supervised</span>
+                            <span class="pub-tag">2024</span>
+                        </div>
+                        <img src="assets/arrowtopright.svg" alt="Arrow" class="pub-arrow">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Blog Posts -->
+    <section class="related-blog-section">
+        <div class="container">
+            <h2 class="section-title">Related Blog Posts</h2>
+            <div class="blog-posts-grid">
+                <div class="blog-post-card">
+                    <div class="blog-post-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800" alt="Blog" class="blog-post-image">
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span class="blog-post-date">March 10, 2024</span>
+                            <span class="blog-post-category">Deep Learning</span>
+                        </div>
+                        <h3 class="blog-post-title">Understanding the Loss Landscape of Neural Networks</h3>
+                        <p class="blog-post-excerpt">
+                            Exploring the geometry of loss surfaces and what it tells us about optimization and generalization in deep learning.
+                        </p>
+                        <a href="#" class="blog-post-link">
+                            Read More
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="blog-arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog-post-card">
+                    <div class="blog-post-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800" alt="Blog" class="blog-post-image">
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span class="blog-post-date">February 28, 2024</span>
+                            <span class="blog-post-category">Theory</span>
+                        </div>
+                        <h3 class="blog-post-title">Why Do Overparameterized Networks Generalize?</h3>
+                        <p class="blog-post-excerpt">
+                            A deep dive into the surprising generalization capabilities of modern deep learning models and theoretical explanations.
+                        </p>
+                        <a href="#" class="blog-post-link">
+                            Read More
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="blog-arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog-post-card">
+                    <div class="blog-post-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800" alt="Blog" class="blog-post-image">
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span class="blog-post-date">February 15, 2024</span>
+                            <span class="blog-post-category">Optimization</span>
+                        </div>
+                        <h3 class="blog-post-title">Adaptive Learning Rates: Theory Meets Practice</h3>
+                        <p class="blog-post-excerpt">
+                            Bridging the gap between theoretical convergence guarantees and practical performance of adaptive optimizers.
+                        </p>
+                        <a href="#" class="blog-post-link">
+                            Read More
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="blog-arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-left">
+            <div class="contact-info-blocks">
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Contacts</h3>
+                    <p class="contact-address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
+                    <a href="mailto:brainlab@mail.ru" class="contact-link">brainlab@mail.ru</a>
+                    <a href="tel:+79999999999" class="contact-link">+7 (999) 999 99 99</a>
+                </div>
+
+                <div class="contact-block">
+                    <h3 class="contact-block-title">BrainLab on social media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span>Telegram</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>X (Twitter)</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Habr</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Vc</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-block">
+                    <p class="copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <div class="contact-form-wrapper">
+                <h3 class="form-title">Fill out the form and leave a request</h3>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">NAME</label>
+                        <input type="text" class="form-input" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">PHONE</label>
+                        <input type="tel" class="form-input" placeholder="Enter your phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">EMAIL</label>
+                        <input type="email" class="form-input" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="terms" class="checkbox-input">
+                        <label for="terms" class="checkbox-label">
+                            I agree to <span class="underline-text">Terms of Service</span> and <span class="underline-text">Privacy Policy</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Neural Architecture Search - BrainLab Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <img src="assets/logo.svg" alt="Logo" class="logo">
+                    <nav class="nav">
+                        <a href="research.html">Research</a>
+                        <a href="publications.html">Publications</a>
+                        <a href="education.html">Education</a>
+                        <a href="team.html">Team</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="about.html">About</a>
+                        <a href="#contact">Contacts</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="language-selector">
+                        <span class="language-text">English</span>
+                        <img src="assets/arrow.svg" alt="Arrow" class="arrow" id="languageArrow">
+                        <div class="language-dropdown" id="languageDropdown">
+                            <div class="language-option">Русский</div>
+                        </div>
+                    </div>
+                    <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <img src="assets/logo.svg" alt="Logo" class="mobile-menu-logo">
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="research.html" class="mobile-nav-link">Research</a>
+                <a href="publications.html" class="mobile-nav-link">Publications</a>
+                <a href="education.html" class="mobile-nav-link">Education</a>
+                <a href="team.html" class="mobile-nav-link">Team</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="#contact" class="mobile-nav-link">Contacts</a>
+            </nav>
+            
+            <div class="mobile-menu-contacts">
+                <a href="mailto:brainlab@mail.ru" class="mobile-menu-link">brainlab@mail.ru</a>
+                <a href="tel:+79999999999" class="mobile-menu-link">+7 (999) 999 99 99</a>
+            </div>
+            
+            <div class="mobile-menu-language">
+                <button class="mobile-language-btn">English</button>
+                <button class="mobile-language-btn">Русский</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Post Section -->
+    <section class="blog-post-section">
+        <div class="container">
+            <div class="blog-post-back">
+                <a href="blog.html" class="back-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Back to Blog
+                </a>
+            </div>
+
+            <article class="blog-post">
+                <div class="blog-post-header">
+                    <div class="blog-post-meta">
+                        <span class="blog-post-date">March 5, 2026</span>
+                        <span class="blog-post-category">Deep Learning</span>
+                    </div>
+                    <h1 class="blog-post-title">Understanding Neural Architecture Search: From Theory to Practice</h1>
+                    <div class="blog-post-author">
+                        <span>By Dr. Anna Petrova and Andrei Novikov</span>
+                    </div>
+                </div>
+
+                <div class="blog-post-image">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200" alt="Neural Architecture Search">
+                </div>
+
+                <div class="blog-post-content">
+                    <h2>Introduction</h2>
+                    <p>
+                        Neural Architecture Search (NAS) has emerged as one of the most transformative technologies in deep learning over the past few years. Instead of manually designing neural network architectures—a process that requires extensive expertise and experimentation—NAS algorithms can automatically discover optimal architectures for specific tasks. This automation not only saves time but often discovers novel architectural patterns that human experts might overlook.
+                    </p>
+                    <p>
+                        At BrainLab, we've been pioneering new approaches to NAS that make it more efficient, more interpretable, and more applicable to real-world problems. In this article, we'll share our insights from years of research and practical experience in this exciting field.
+                    </p>
+
+                    <h2>The Evolution of Neural Architecture Search</h2>
+                    <p>
+                        The concept of automatically designing neural networks isn't new—it dates back to the 1980s and early work on neuroevolution. However, modern NAS gained significant traction with the advent of deep learning and increased computational resources. Early approaches used reinforcement learning to train a controller that could generate and evaluate different architectures, but these methods were computationally expensive, often requiring thousands of GPU-days.
+                    </p>
+                    <p>
+                        Our research has focused on making NAS more practical. We've developed gradient-based methods that reduce search time from weeks to just a few hours on a single GPU. By treating the architecture search as a differentiable optimization problem, we can leverage efficient optimization algorithms originally designed for training neural networks.
+                    </p>
+
+                    <h2>Key Challenges in NAS</h2>
+                    <p>
+                        Despite significant progress, several challenges remain in making NAS truly practical for widespread adoption:
+                    </p>
+                    <ul>
+                        <li><strong>Computational Cost:</strong> Even with efficient methods, searching over large architecture spaces remains computationally expensive. We need better strategies for prioritizing promising architectures.</li>
+                        <li><strong>Search Space Design:</strong> The quality of discovered architectures heavily depends on how we define the search space. Too restrictive, and we miss innovative designs; too broad, and the search becomes intractable.</li>
+                        <li><strong>Transfer Learning:</strong> Architectures discovered for one task don't always transfer well to others. We need methods that can adapt architectures to new domains efficiently.</li>
+                        <li><strong>Hardware Awareness:</strong> The optimal architecture depends not just on accuracy but also on inference speed, memory usage, and energy efficiency on target hardware.</li>
+                    </ul>
+
+                    <h2>Our Approach: Medical Imaging NAS</h2>
+                    <p>
+                        In our recent project on Neural Architecture Search for Medical Imaging, we've developed specialized NAS methods that incorporate domain knowledge from medical imaging. Rather than searching over generic CNN architectures, we designed a search space that includes components specifically useful for medical images: multi-scale feature extraction for detecting lesions of varying sizes, attention mechanisms for focusing on relevant anatomical regions, and interpretable building blocks that align with clinical reasoning.
+                    </p>
+                    <p>
+                        The results have been remarkable. Our automatically discovered architectures achieve 15% better accuracy in early cancer detection compared to manually designed networks, while also being more interpretable to medical professionals. This interpretability is crucial for clinical adoption—doctors need to understand why an AI system makes a particular diagnosis.
+                    </p>
+
+                    <h2>Practical Considerations</h2>
+                    <p>
+                        When implementing NAS in practice, we've learned several important lessons:
+                    </p>
+                    <ol>
+                        <li><strong>Start with a well-designed search space:</strong> Include architectural elements that have proven useful in your domain while keeping the space manageable.</li>
+                        <li><strong>Use multi-objective optimization:</strong> Don't just optimize for accuracy. Consider computational cost, latency, and memory usage from the start.</li>
+                        <li><strong>Validate thoroughly:</strong> Architectures that perform well during search don't always generalize. Always retrain discovered architectures from scratch and validate on held-out data.</li>
+                        <li><strong>Embrace hybrid approaches:</strong> Combine automated search with human expertise. Let NAS explore architectural details while you guide high-level design choices.</li>
+                    </ol>
+
+                    <h2>The Future of NAS</h2>
+                    <p>
+                        Looking ahead, we see several exciting directions for NAS research. One is moving beyond fixed architectures to dynamic networks that can adapt their structure based on input complexity. Another is developing NAS methods that can discover entire AI systems, not just individual neural networks, by jointly optimizing data preprocessing, model architecture, and post-processing steps.
+                    </p>
+                    <p>
+                        We're also working on making NAS more accessible to researchers and practitioners who may not have access to massive computational resources. Our goal is to democratize NAS so that anyone can benefit from automatically designed, high-performance neural networks.
+                    </p>
+
+                    <h2>Conclusion</h2>
+                    <p>
+                        Neural Architecture Search represents a fundamental shift in how we approach deep learning system design. Rather than relying solely on human intuition and trial-and-error, we can now systematically explore vast architecture spaces to find optimal solutions. While challenges remain, the progress we've made at BrainLab and across the broader research community suggests that NAS will play an increasingly important role in making AI more powerful, efficient, and accessible.
+                    </p>
+                    <p>
+                        If you're interested in learning more about our NAS research or collaborating with us, please don't hesitate to reach out. We're always excited to discuss new ideas and applications of this transformative technology.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Related Posts Section -->
+    <section class="related-posts-section">
+        <div class="container">
+            <h2 class="related-posts-title">Other Blog Articles</h2>
+            <div class="related-posts-grid">
+                <a href="blog-post.html" class="blog-card">
+                    <div class="blog-card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800" alt="Computer Vision" class="blog-card-image">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date">February 28, 2026</span>
+                            <span class="blog-card-category">Computer Vision</span>
+                        </div>
+                        <h3 class="blog-card-title">Self-Supervised Learning: The Future of Computer Vision</h3>
+                        <p class="blog-card-excerpt">
+                            Discover how self-supervised learning techniques are reducing our dependence on labeled data.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="blog-post.html" class="blog-card">
+                    <div class="blog-card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Large Language Models" class="blog-card-image">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date">February 20, 2026</span>
+                            <span class="blog-card-category">NLP</span>
+                        </div>
+                        <h3 class="blog-card-title">Efficient Transformers for Mobile: Making LLMs Accessible</h3>
+                        <p class="blog-card-excerpt">
+                            Novel methods to compress transformer models for mobile deployment without sacrificing performance.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="blog-post.html" class="blog-card">
+                    <div class="blog-card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800" alt="Reinforcement Learning" class="blog-card-image">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date">February 15, 2026</span>
+                            <span class="blog-card-category">Reinforcement Learning</span>
+                        </div>
+                        <h3 class="blog-card-title">Reinforcement Learning in Robotics: Challenges and Solutions</h3>
+                        <p class="blog-card-excerpt">
+                            Key challenges of applying RL algorithms to real-world robotics and approaches to safe exploration.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-left">
+            <div class="contact-info-blocks">
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Contacts</h3>
+                    <p class="contact-address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
+                    <a href="mailto:brainlab@mail.ru" class="contact-link">brainlab@mail.ru</a>
+                    <a href="tel:+79999999999" class="contact-link">+7 (999) 999 99 99</a>
+                </div>
+
+                <div class="contact-block">
+                    <h3 class="contact-block-title">BrainLab on social media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span>Telegram</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>X (Twitter)</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Habr</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Vc</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-block">
+                    <p class="copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <div class="contact-form-wrapper">
+                <h3 class="form-title">Fill out the form and leave a request</h3>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">NAME</label>
+                        <input type="text" class="form-input" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">PHONE</label>
+                        <input type="tel" class="form-input" placeholder="Enter your phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">EMAIL</label>
+                        <input type="email" class="form-input" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="terms" class="checkbox-input">
+                        <label for="terms" class="checkbox-label">
+                            I agree to <span class="underline-text">Terms of Service</span> and <span class="underline-text">Privacy Policy</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

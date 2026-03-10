@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publication Detail - BrainLab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="Logo" class="logo">
+                    </a>
+                    <nav class="nav">
+                        <a href="research.html">Research</a>
+                        <a href="publications.html">Publications</a>
+                        <a href="education.html">Education</a>
+                        <a href="team.html">Team</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="about.html">About</a>
+                        <a href="#contact">Contacts</a>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="language-selector">
+                        <span class="language-text">English</span>
+                        <img src="assets/arrow.svg" alt="Arrow" class="arrow" id="languageArrow">
+                        <div class="language-dropdown" id="languageDropdown">
+                            <div class="language-option">Русский</div>
+                        </div>
+                    </div>
+                    <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <img src="assets/logo.svg" alt="Logo" class="mobile-menu-logo">
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+                            <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="research.html" class="mobile-nav-link">Research</a>
+                    <a href="publications.html" class="mobile-nav-link">Publications</a>
+                    <a href="education.html" class="mobile-nav-link">Education</a>
+                    <a href="team.html" class="mobile-nav-link">Team</a>
+                    <a href="projects.html" class="mobile-nav-link">Projects</a>
+                    <a href="blog.html" class="mobile-nav-link">Blog</a>
+                    <a href="about.html" class="mobile-nav-link">About</a>
+                    <a href="#contact" class="mobile-nav-link">Contacts</a>
+                </nav>
+            
+            <div class="mobile-menu-info">
+                <div class="mobile-menu-block">
+                    <h3 class="mobile-menu-title">Contact Us</h3>
+                    <a href="mailto:brainlab@mail.ru" class="mobile-menu-link">brainlab@mail.ru</a>
+                    <a href="tel:+79999999999" class="mobile-menu-link">+7 (999) 999 99 99</a>
+                </div>
+                
+                <div class="mobile-menu-language">
+                    <button class="mobile-language-btn">English</button>
+                    <button class="mobile-language-btn">Русский</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication Detail Section -->
+    <section class="pub-detail-section">
+        <div class="container">
+            <a href="publications.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Back to Publications
+            </a>
+
+            <div class="pub-detail-header">
+                <div class="pub-detail-badges">
+                    <span class="pub-badge conference">NeurIPS 2024</span>
+                    <span class="pub-badge level-a">A*</span>
+                </div>
+                <h1 class="pub-detail-title">Neural Architecture Search with Reinforcement Learning for Image Classification</h1>
+                <div class="pub-detail-authors">
+                    <a href="#" class="pub-detail-author">A. Petrov</a>
+                    <span class="pub-separator">·</span>
+                    <a href="#" class="pub-detail-author">M. Sokolov</a>
+                    <span class="pub-separator">·</span>
+                    <a href="#" class="pub-detail-author">E. Ivanova</a>
+                </div>
+                <div class="pub-detail-meta">
+                    <span class="pub-detail-date">March 15, 2024</span>
+                    <span class="pub-separator">·</span>
+                    <span class="pub-detail-venue">Conference on Neural Information Processing Systems</span>
+                </div>
+            </div>
+
+            <div class="pub-detail-tags">
+                <span class="pub-tag">Deep Learning</span>
+                <span class="pub-tag">Computer Vision</span>
+                <span class="pub-tag">Neural Architecture Search</span>
+                <span class="pub-tag">Reinforcement Learning</span>
+            </div>
+
+            <div class="pub-detail-content">
+                <div class="pub-detail-main">
+                    <div class="pub-detail-section-block">
+                        <h2 class="pub-detail-heading">Abstract</h2>
+                        <p class="pub-detail-text">
+                            We propose a novel approach to neural architecture search using reinforcement learning techniques. Our method automatically discovers high-performing CNN architectures for image classification tasks without requiring extensive manual design. The controller network learns to generate architecture descriptions using policy gradient methods, optimizing for both accuracy and computational efficiency.
+                        </p>
+                        <p class="pub-detail-text">
+                            Experimental results on CIFAR-10 and ImageNet demonstrate that our approach achieves state-of-the-art performance while reducing the search time by 40% compared to existing methods. The discovered architectures transfer well to other vision tasks, showing strong generalization capabilities.
+                        </p>
+                    </div>
+
+                    <div class="pub-detail-section-block">
+                        <h2 class="pub-detail-heading">Key Contributions</h2>
+                        <ul class="pub-detail-list">
+                            <li>Novel reinforcement learning formulation for neural architecture search</li>
+                            <li>Efficient search strategy that reduces computational cost by 40%</li>
+                            <li>State-of-the-art results on CIFAR-10 (97.8% accuracy) and ImageNet (Top-1: 79.2%)</li>
+                            <li>Strong transfer learning performance across multiple vision tasks</li>
+                            <li>Theoretical analysis of convergence properties and search space exploration</li>
+                        </ul>
+                    </div>
+
+                    <div class="pub-detail-section-block">
+                        <h2 class="pub-detail-heading">Methodology</h2>
+                        <p class="pub-detail-text">
+                            Our approach uses a recurrent neural network controller that generates architecture descriptions by predicting a sequence of tokens. The controller is trained with REINFORCE to maximize the expected accuracy on a validation set. We introduce several key innovations:
+                        </p>
+                        <p class="pub-detail-text">
+                            <strong>Search Space Design:</strong> We define a flexible search space that includes skip connections, different convolution types, and various activation functions. This allows the controller to explore a rich space of possible architectures.
+                        </p>
+                        <p class="pub-detail-text">
+                            <strong>Efficient Training:</strong> To reduce the computational cost, we employ parameter sharing and early stopping techniques. Candidate architectures share weights during evaluation, significantly speeding up the search process.
+                        </p>
+                    </div>
+
+                    <div class="pub-detail-section-block">
+                        <h2 class="pub-detail-heading">Results</h2>
+                        <p class="pub-detail-text">
+                            We evaluated our method on multiple benchmark datasets and compared against both manually designed architectures and other automated search methods. The discovered architectures consistently outperform baseline models while maintaining reasonable computational costs.
+                        </p>
+                        <p class="pub-detail-text">
+                            On CIFAR-10, our best architecture achieves 97.8% test accuracy with 3.2M parameters. On ImageNet, we reach 79.2% top-1 accuracy and 94.6% top-5 accuracy. The search process completes in approximately 4 GPU-days on modern hardware.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pub-detail-sidebar">
+                    <div class="pub-detail-info-card">
+                        <h3 class="pub-detail-info-title">Publication Info</h3>
+                        <div class="pub-detail-info-item">
+                            <span class="pub-detail-info-label">Published</span>
+                            <span class="pub-detail-info-value">March 2024</span>
+                        </div>
+                        <div class="pub-detail-info-item">
+                            <span class="pub-detail-info-label">Conference</span>
+                            <span class="pub-detail-info-value">NeurIPS 2024</span>
+                        </div>
+                        <div class="pub-detail-info-item">
+                            <span class="pub-detail-info-label">Rating</span>
+                            <span class="pub-detail-info-value">A* (Core)</span>
+                        </div>
+                        <div class="pub-detail-info-item">
+                            <span class="pub-detail-info-label">Pages</span>
+                            <span class="pub-detail-info-value">12</span>
+                        </div>
+                    </div>
+
+                    <div class="pub-detail-info-card">
+                        <h3 class="pub-detail-info-title">Links</h3>
+                        <a href="#" class="pub-detail-link">
+                            <span>View PDF</span>
+                            <img src="assets/arrowtopright.svg" alt="Arrow" class="link-arrow">
+                        </a>
+                        <a href="#" class="pub-detail-link">
+                            <span>arXiv</span>
+                            <img src="assets/arrowtopright.svg" alt="Arrow" class="link-arrow">
+                        </a>
+                        <a href="#" class="pub-detail-link">
+                            <span>Code (GitHub)</span>
+                            <img src="assets/arrowtopright.svg" alt="Arrow" class="link-arrow">
+                        </a>
+                        <a href="#" class="pub-detail-link">
+                            <span>Presentation Slides</span>
+                            <img src="assets/arrowtopright.svg" alt="Arrow" class="link-arrow">
+                        </a>
+                    </div>
+
+                    <div class="pub-detail-info-card">
+                        <h3 class="pub-detail-info-title">Citation</h3>
+                        <div class="pub-citation">
+                            <code>
+@inproceedings{petrov2024neural,<br>
+&nbsp;&nbsp;title={Neural Architecture Search with RL},<br>
+&nbsp;&nbsp;author={Petrov, A. and Sokolov, M. and Ivanova, E.},<br>
+&nbsp;&nbsp;booktitle={NeurIPS},<br>
+&nbsp;&nbsp;year={2024}<br>
+}
+                            </code>
+                        </div>
+                        <button class="copy-citation-btn">Copy Citation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-left">
+            <div class="contact-info-blocks">
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Contacts</h3>
+                    <p class="contact-address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
+                    <a href="mailto:brainlab@mail.ru" class="contact-link">brainlab@mail.ru</a>
+                    <a href="tel:+79999999999" class="contact-link">+7 (999) 999 99 99</a>
+                </div>
+
+                <div class="contact-block">
+                    <h3 class="contact-block-title">BrainLab on social media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span>Telegram</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>X (Twitter)</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Habr</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>Vc</span>
+                            <img src="assets/arrowlong.svg" alt="Arrow" class="social-arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-block">
+                    <p class="copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <div class="contact-form-wrapper">
+                <h3 class="form-title">Fill out the form and leave a request</h3>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">NAME</label>
+                        <input type="text" class="form-input" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">PHONE</label>
+                        <input type="tel" class="form-input" placeholder="Enter your phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">EMAIL</label>
+                        <input type="email" class="form-input" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="terms" class="checkbox-input">
+                        <label for="terms" class="checkbox-label">
+                            I agree to <span class="underline-text">Terms of Service</span> and <span class="underline-text">Privacy Policy</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

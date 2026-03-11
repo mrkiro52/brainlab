@@ -115,61 +115,34 @@ body {
     align-items: center;
 }
 
-.language-selector {
+/* Language Switcher */
+.language-switcher {
     display: flex;
     align-items: center;
     gap: 8px;
-    cursor: pointer;
-    position: relative;
     user-select: none;
 }
 
-.language-text {
+.lang-option {
+    color: rgba(250, 248, 241, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.lang-option:hover {
+    color: rgba(250, 248, 241, 0.8);
+}
+
+.lang-option.active {
     color: rgba(250, 248, 241, 1);
+}
+
+.lang-separator {
+    color: rgba(250, 248, 241, 0.5);
     font-size: 16px;
     font-weight: 400;
-}
-
-.arrow {
-    width: 14px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.arrow.rotated {
-    transform: rotate(180deg);
-}
-
-.language-dropdown {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    margin-top: 8px;
-    background-color: rgba(251, 237, 214, 1);
-    padding: 8px 16px;
-    border-radius: 8px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-}
-
-.language-dropdown.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.language-option {
-    color: black;
-    font-size: 16px;
-    font-weight: 400;
-    white-space: nowrap;
-    padding: 4px 0;
-}
-
-.language-option:hover {
-    opacity: 0.8;
 }
 
 /* Burger Menu */
@@ -403,6 +376,13 @@ body {
     background-color: rgba(251, 237, 214, 1);
     padding: 80px 0;
 }
+
+    body.home .team-section {
+        background-color: rgba(251, 237, 214, 1);
+    }
+    body.team-page .team-section {
+        background-color: rgba(250, 248, 241, 1);
+    }
 
 .team-blocks {
     display: flex;
@@ -2058,7 +2038,7 @@ body {
         display: none;
     }
     
-    .language-selector {
+    .language-switcher {
         display: none;
     }
     

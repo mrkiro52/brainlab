@@ -19,22 +19,19 @@ window.addEventListener('load', function() {
     }
 });
 
-// Language selector functionality
-const languageSelector = document.querySelector('.language-selector');
-const languageArrow = document.getElementById('languageArrow');
-const languageDropdown = document.getElementById('languageDropdown');
+// Language switcher functionality
+const languageSwitcher = document.querySelector('.language-switcher');
 
-if (languageSelector && languageArrow && languageDropdown) {
-    languageSelector.addEventListener('click', function(e) {
-        e.stopPropagation();
-        languageArrow.classList.toggle('rotated');
-        languageDropdown.classList.toggle('show');
-    });
-
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function() {
-        languageArrow.classList.remove('rotated');
-        languageDropdown.classList.remove('show');
+if (languageSwitcher) {
+    const langOptions = languageSwitcher.querySelectorAll('.lang-option');
+    
+    langOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            // Remove active class from all options
+            langOptions.forEach(opt => opt.classList.remove('active'));
+            // Add active class to clicked option
+            this.classList.add('active');
+        });
     });
 }
 

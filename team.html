@@ -6,13 +6,15 @@
     <title>Our Team - BrainLab</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="team-page">
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="header-left">
-                    <img src="assets/logo.svg" alt="Logo" class="logo">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="Logo" class="logo">
+                    </a>
                     <nav class="nav">
                         <a href="research.html">Research</a>
                         <a href="publications.html">Publications</a>
@@ -25,12 +27,10 @@
                     </nav>
                 </div>
                 <div class="header-right">
-                    <div class="language-selector">
-                        <span class="language-text">English</span>
-                        <img src="assets/arrow.svg" alt="Arrow" class="arrow" id="languageArrow">
-                        <div class="language-dropdown" id="languageDropdown">
-                            <div class="language-option">Русский</div>
-                        </div>
+                    <div class="language-switcher">
+                        <span class="lang-option active" data-lang="en">EN</span>
+                        <span class="lang-separator">/</span>
+                        <span class="lang-option" data-lang="ru">RU</span>
                     </div>
                     <button class="burger-menu" id="burgerMenu" aria-label="Menu">
                         <span></span>

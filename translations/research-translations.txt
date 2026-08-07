@@ -1,0 +1,24 @@
+ПЕРЕВОДЫ ДЛЯ СТРАНИЦЫ: research.html (Направления исследований)
+
+=== ЗАГОЛОВОК ===
+Areas of research - Направления исследований
+Areas - Направления
+
+=== КАРТОЧКИ ИССЛЕДОВАНИЙ ===
+Deep Learning Theory - Теория глубокого обучения
+Investigating theoretical foundations of deep neural networks, convergence properties, and generalization bounds for modern architectures. - Исследование теоретических основ глубоких нейронных сетей, свойств сходимости и границ обобщения для современных архитектур.
+
+Optimization Algorithms - Алгоритмы оптимизации
+Developing and analyzing advanced optimization methods for training large-scale machine learning models with provable convergence guarantees. - Разработка и анализ передовых методов оптимизации для обучения крупномасштабных моделей машинного обучения с доказуемыми гарантиями сходимости.
+
+Computer Vision - Компьютерное зрение
+Advancing self-supervised learning, object detection, and semantic segmentation through novel architectures and training paradigms. - Развитие самообучения, обнаружения объектов и семантической сегментации с помощью новых архитектур и парадигм обучения.
+
+Natural Language Processing - Обработка естественного языка
+Exploring transformer architectures, language understanding, and generation with focus on computational efficiency and interpretability. - Изучение архитектур трансформеров, понимания и генерации языка с акцентом на вычислительную эффективность и интерпретируемость.
+
+Reinforcement Learning - Обучение с подкреплением
+Developing theoretical frameworks and practical algorithms for decision-making in complex, uncertain environments with limited data. - Разработка теоретических основ и практических алгоритмов для принятия решений в сложных, неопределённых средах с ограниченными данными.
+
+Explainable AI - Объяснимый ИИ
+Creating interpretable machine learning models and developing methods to understand and explain decisions of black-box AI systems. - Создание интерпретируемых моделей машинного обучения и разработка методов для понимания и объяснения решений чёрных ящиков ИИ систем.

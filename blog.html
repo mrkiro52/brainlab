@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - BrainLab</title>
+    <script>document.documentElement.lang=localStorage.getItem("brainlab-lang")||"en"</script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,14 +17,14 @@
                         <img src="assets/logo.svg" alt="Logo" class="logo">
                     </a>
                     <nav class="nav">
-                        <a href="research.html">Research</a>
-                        <a href="publications.html">Publications</a>
-                        <a href="education.html">Education</a>
-                        <a href="team.html">Team</a>
-                        <a href="projects.html">Projects</a>
-                        <a href="blog.html" class="active">Blog</a>
-                        <a href="about.html">About</a>
-                        <a href="#contact">Contacts</a>
+                        <a href="research.html" data-i18n="nav.research">Research</a>
+                        <a href="publications.html" data-i18n="nav.publications">Publications</a>
+                        <a href="education.html" data-i18n="nav.education">Education</a>
+                        <a href="team.html" data-i18n="nav.team">Team</a>
+                        <a href="projects.html" data-i18n="nav.projects">Projects</a>
+                        <a href="blog.html" class="active" data-i18n="nav.blog">Blog</a>
+                        <a href="about.html" data-i18n="nav.about">About</a>
+                        <a href="#contact" data-i18n="nav.contacts">Contacts</a>
                     </nav>
                 </div>
                 <div class="header-right">
@@ -41,6 +42,7 @@
             </div>
         </div>
     </header>
+<script>!function(){var t={'nav.home':'Главная','nav.research':'Исследования','nav.publications':'Публикации','nav.education':'Образование','nav.team':'Команда','nav.projects':'Проекты','nav.blog':'Блог','nav.about':'О нас','nav.contacts':'Контакты','mobile.contact-us':'Связаться с нами'};if('ru'===document.documentElement.lang)document.querySelectorAll('[data-i18n]').forEach(function(e){t[e.dataset.i18n]&&(e.textContent=t[e.dataset.i18n]);});}();</script>
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
@@ -53,24 +55,24 @@
                     </svg>
                 </button>
             </div>
-            
+
             <nav class="mobile-nav">
-                <a href="index.html" class="mobile-nav-link">Home</a>
-                <a href="research.html" class="mobile-nav-link">Research</a>
-                <a href="publications.html" class="mobile-nav-link">Publications</a>
-                <a href="education.html" class="mobile-nav-link">Education</a>
-                <a href="team.html" class="mobile-nav-link">Team</a>
-                <a href="projects.html" class="mobile-nav-link">Projects</a>
-                <a href="blog.html" class="mobile-nav-link">Blog</a>
-                <a href="about.html" class="mobile-nav-link">About</a>
-                <a href="#contact" class="mobile-nav-link">Contacts</a>
+                <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">Home</a>
+                <a href="research.html" class="mobile-nav-link" data-i18n="nav.research">Research</a>
+                <a href="publications.html" class="mobile-nav-link" data-i18n="nav.publications">Publications</a>
+                <a href="education.html" class="mobile-nav-link" data-i18n="nav.education">Education</a>
+                <a href="team.html" class="mobile-nav-link" data-i18n="nav.team">Team</a>
+                <a href="projects.html" class="mobile-nav-link" data-i18n="nav.projects">Projects</a>
+                <a href="blog.html" class="mobile-nav-link" data-i18n="nav.blog">Blog</a>
+                <a href="about.html" class="mobile-nav-link" data-i18n="nav.about">About</a>
+                <a href="#contact" class="mobile-nav-link" data-i18n="nav.contacts">Contacts</a>
             </nav>
-            
+
             <div class="mobile-menu-contacts">
                 <a href="mailto:brainlab@mail.ru" class="mobile-menu-link">brainlab@mail.ru</a>
                 <a href="tel:+79999999999" class="mobile-menu-link">+7 (999) 999 99 99</a>
             </div>
-            
+
             <div class="mobile-menu-language">
                 <button class="mobile-language-btn">English</button>
                 <button class="mobile-language-btn">Русский</button>
@@ -81,10 +83,10 @@
     <!-- Blog Hero Section -->
     <section class="blog-hero">
         <div class="container">
-            <h1 class="blog-title">
+            <h1 class="blog-title" data-i18n-html="blog.hero.title">
                 BrainLab <span class="underlined">Blog</span>
             </h1>
-            <p class="blog-subtitle">
+            <p class="blog-subtitle" data-i18n="blog.hero.subtitle">
                 Latest insights, research updates, and thoughts on artificial intelligence from our team of experts.
             </p>
         </div>
@@ -104,8 +106,8 @@
                             <span class="blog-card-date">March 5, 2026</span>
                             <span class="blog-card-category">Deep Learning</span>
                         </div>
-                        <h3 class="blog-card-title">Understanding Neural Architecture Search: From Theory to Practice</h3>
-                        <p class="blog-card-excerpt">
+                        <h3 class="blog-card-title" data-i18n="blog.card1.title">Understanding Neural Architecture Search: From Theory to Practice</h3>
+                        <p class="blog-card-excerpt" data-i18n="blog.card1.excerpt">
                             Neural Architecture Search has revolutionized how we design deep learning models. In this article, we explore the fundamentals and share our latest findings.
                         </p>
                     </div>
@@ -121,8 +123,8 @@
                             <span class="blog-card-date">February 28, 2026</span>
                             <span class="blog-card-category">Computer Vision</span>
                         </div>
-                        <h3 class="blog-card-title">Self-Supervised Learning: The Future of Computer Vision</h3>
-                        <p class="blog-card-excerpt">
+                        <h3 class="blog-card-title" data-i18n="blog.card2.title">Self-Supervised Learning: The Future of Computer Vision</h3>
+                        <p class="blog-card-excerpt" data-i18n="blog.card2.excerpt">
                             Discover how self-supervised learning techniques are reducing our dependence on labeled data and pushing the boundaries of computer vision.
                         </p>
                     </div>
@@ -138,8 +140,8 @@
                             <span class="blog-card-date">February 20, 2026</span>
                             <span class="blog-card-category">NLP</span>
                         </div>
-                        <h3 class="blog-card-title">Efficient Transformers for Mobile: Making LLMs Accessible</h3>
-                        <p class="blog-card-excerpt">
+                        <h3 class="blog-card-title" data-i18n="blog.card3.title">Efficient Transformers for Mobile: Making LLMs Accessible</h3>
+                        <p class="blog-card-excerpt" data-i18n="blog.card3.excerpt">
                             Our research team has developed novel methods to compress transformer models for mobile deployment without sacrificing performance.
                         </p>
                     </div>
@@ -155,8 +157,8 @@
                             <span class="blog-card-date">February 15, 2026</span>
                             <span class="blog-card-category">Reinforcement Learning</span>
                         </div>
-                        <h3 class="blog-card-title">Reinforcement Learning in Robotics: Challenges and Solutions</h3>
-                        <p class="blog-card-excerpt">
+                        <h3 class="blog-card-title" data-i18n="blog.card4.title">Reinforcement Learning in Robotics: Challenges and Solutions</h3>
+                        <p class="blog-card-excerpt" data-i18n="blog.card4.excerpt">
                             We discuss the key challenges of applying RL algorithms to real-world robotics and present our approaches to safe exploration.
                         </p>
                     </div>
@@ -172,8 +174,8 @@
                             <span class="blog-card-date">February 10, 2026</span>
                             <span class="blog-card-category">Theory</span>
                         </div>
-                        <h3 class="blog-card-title">Convergence Guarantees in Non-Convex Optimization</h3>
-                        <p class="blog-card-excerpt">
+                        <h3 class="blog-card-title" data-i18n="blog.card5.title">Convergence Guarantees in Non-Convex Optimization</h3>
+                        <p class="blog-card-excerpt" data-i18n="blog.card5.excerpt">
                             A deep dive into our recent theoretical results establishing convergence properties for adaptive optimization algorithms.
                         </p>
                     </div>
@@ -189,8 +191,8 @@
                             <span class="blog-card-date">February 5, 2026</span>
                             <span class="blog-card-category">Explainable AI</span>
                         </div>
-                        <h3 class="blog-card-title">Building Trust Through Transparency: XAI in Healthcare</h3>
-                        <p class="blog-card-excerpt">
+                        <h3 class="blog-card-title" data-i18n="blog.card6.title">Building Trust Through Transparency: XAI in Healthcare</h3>
+                        <p class="blog-card-excerpt" data-i18n="blog.card6.excerpt">
                             How explainable AI techniques are helping medical professionals understand and trust AI-assisted diagnosis systems.
                         </p>
                     </div>
@@ -206,8 +208,8 @@
                             <span class="blog-card-date">January 28, 2026</span>
                             <span class="blog-card-category">AI Safety</span>
                         </div>
-                        <h3 class="blog-card-title">Adversarial Robustness: Defending Against AI Attacks</h3>
-                        <p class="blog-card-excerpt">
+                        <h3 class="blog-card-title" data-i18n="blog.card7.title">Adversarial Robustness: Defending Against AI Attacks</h3>
+                        <p class="blog-card-excerpt" data-i18n="blog.card7.excerpt">
                             An overview of current threats to AI systems and our research on building more robust and secure neural networks.
                         </p>
                     </div>
@@ -223,8 +225,8 @@
                             <span class="blog-card-date">January 20, 2026</span>
                             <span class="blog-card-category">Meta Learning</span>
                         </div>
-                        <h3 class="blog-card-title">Few-Shot Learning: Teaching AI to Learn from Limited Data</h3>
-                        <p class="blog-card-excerpt">
+                        <h3 class="blog-card-title" data-i18n="blog.card8.title">Few-Shot Learning: Teaching AI to Learn from Limited Data</h3>
+                        <p class="blog-card-excerpt" data-i18n="blog.card8.excerpt">
                             Exploring meta-learning approaches that enable AI systems to quickly adapt to new tasks with minimal training examples.
                         </p>
                     </div>
@@ -240,8 +242,8 @@
                             <span class="blog-card-date">January 15, 2026</span>
                             <span class="blog-card-category">Graph ML</span>
                         </div>
-                        <h3 class="blog-card-title">Graph Neural Networks for Drug Discovery</h3>
-                        <p class="blog-card-excerpt">
+                        <h3 class="blog-card-title" data-i18n="blog.card9.title">Graph Neural Networks for Drug Discovery</h3>
+                        <p class="blog-card-excerpt" data-i18n="blog.card9.excerpt">
                             How we're using GNNs to predict molecular properties and accelerate the drug discovery process in collaboration with pharma companies.
                         </p>
                     </div>
@@ -255,14 +257,14 @@
         <div class="contact-left">
             <div class="contact-info-blocks">
                 <div class="contact-block">
-                    <h3 class="contact-block-title">Contacts</h3>
-                    <p class="contact-address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
+                    <h3 class="contact-block-title" data-i18n="contact.title">Contacts</h3>
+                    <p class="contact-address" data-i18n="contact.address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
                     <a href="mailto:brainlab@mail.ru" class="contact-link">brainlab@mail.ru</a>
                     <a href="tel:+79999999999" class="contact-link">+7 (999) 999 99 99</a>
                 </div>
 
                 <div class="contact-block">
-                    <h3 class="contact-block-title">BrainLab on social media</h3>
+                    <h3 class="contact-block-title" data-i18n="contact.social">BrainLab on social media</h3>
                     <div class="social-links">
                         <a href="#" class="social-link">
                             <span>Telegram</span>
@@ -284,44 +286,46 @@
                 </div>
 
                 <div class="contact-block">
-                    <p class="copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
+                    <p class="copyright" data-i18n="contact.copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
 
         <div class="contact-right">
             <div class="contact-form-wrapper">
-                <h3 class="form-title">Fill out the form and leave a request</h3>
-                
+                <h3 class="form-title" data-i18n="form.title">Fill out the form and leave a request</h3>
+
                 <form class="contact-form">
                     <div class="form-group">
-                        <label class="form-label">NAME</label>
-                        <input type="text" class="form-input" placeholder="Enter your name">
+                        <label class="form-label" data-i18n="form.name">NAME</label>
+                        <input type="text" class="form-input" placeholder="Enter your name" data-i18n-placeholder="form.name.placeholder">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">PHONE</label>
-                        <input type="tel" class="form-input" placeholder="Enter your phone">
+                        <label class="form-label" data-i18n="form.phone">PHONE</label>
+                        <input type="tel" class="form-input" placeholder="Enter your phone" data-i18n-placeholder="form.phone.placeholder">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">EMAIL</label>
-                        <input type="email" class="form-input" placeholder="Enter your email">
+                        <label class="form-label" data-i18n="form.email">EMAIL</label>
+                        <input type="email" class="form-input" placeholder="Enter your email" data-i18n-placeholder="form.email.placeholder">
                     </div>
 
                     <div class="form-checkbox">
                         <input type="checkbox" id="terms" class="checkbox-input">
-                        <label for="terms" class="checkbox-label">
+                        <label for="terms" class="checkbox-label" data-i18n-html="form.agree">
                             I agree to <span class="underline-text">Terms of Service</span> and <span class="underline-text">Privacy Policy</span>
                         </label>
                     </div>
 
-                    <button type="submit" class="form-submit-btn">Contact Us</button>
+                    <button type="submit" class="form-submit-btn" data-i18n="form.submit">Contact Us</button>
                 </form>
             </div>
         </div>
     </section>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
+    <script src="site-blog.js"></script>
 </body>
 </html>

@@ -1,0 +1,61 @@
+ПЕРЕВОДЫ ДЛЯ СТРАНИЦЫ: blog.html (Блог)
+
+=== ЗАГОЛОВОК ===
+BrainLab Blog - Блог BrainLab
+Latest insights, research updates, and thoughts on artificial intelligence from our team of experts. - Последние идеи, обновления исследований и мысли об искусственном интеллекте от нашей команды экспертов.
+
+=== СТАТЬИ БЛОГА ===
+
+== СТАТЬЯ 1 ==
+March 5, 2026 - 5 марта 2026
+Deep Learning - Глубокое обучение
+Understanding Neural Architecture Search: From Theory to Practice - Понимание поиска нейронной архитектуры: от теории к практике
+Neural Architecture Search has revolutionized how we design deep learning models. In this article, we explore the fundamentals and share our latest findings. - Поиск нейронной архитектуры произвёл революцию в том, как мы проектируем модели глубокого обучения. В этой статье мы исследуем основы и делимся нашими последними открытиями.
+
+== СТАТЬЯ 2 ==
+February 28, 2026 - 28 февраля 2026
+Computer Vision - Компьютерное зрение
+Self-Supervised Learning: The Future of Computer Vision - Самообучение: будущее компьютерного зрения
+Discover how self-supervised learning techniques are reducing our dependence on labeled data and pushing the boundaries of computer vision. - Узнайте, как методы самообучения снижают нашу зависимость от размеченных данных и раздвигают границы компьютерного зрения.
+
+== СТАТЬЯ 3 ==
+February 20, 2026 - 20 февраля 2026
+NLP - ОЕЯ
+Efficient Transformers for Mobile: Making LLMs Accessible - Эффективные трансформеры для мобильных устройств: делаем большие языковые модели доступными
+Our research team has developed novel methods to compress transformer models for mobile deployment without sacrificing performance. - Наша исследовательская команда разработала новые методы для сжатия моделей трансформеров для мобильного развёртывания без потери производительности.
+
+== СТАТЬЯ 4 ==
+February 15, 2026 - 15 февраля 2026
+Reinforcement Learning - Обучение с подкреплением
+Reinforcement Learning in Robotics: Challenges and Solutions - Обучение с подкреплением в робототехнике: задачи и решения
+We discuss the key challenges of applying RL algorithms to real-world robotics and present our approaches to safe exploration. - Мы обсуждаем ключевые задачи применения алгоритмов RL к реальной робототехнике и представляем наши подходы к безопасному исследованию.
+
+== СТАТЬЯ 5 ==
+February 10, 2026 - 10 февраля 2026
+Theory - Теория
+Convergence Guarantees in Non-Convex Optimization - Гарантии сходимости в невыпуклой оптимизации
+A deep dive into our recent theoretical results establishing convergence properties for adaptive optimization algorithms. - Глубокое погружение в наши недавние теоретические результаты, устанавливающие свойства сходимости для адаптивных алгоритмов оптимизации.
+
+== СТАТЬЯ 6 ==
+February 5, 2026 - 5 февраля 2026
+Explainable AI - Объяснимый ИИ
+Building Trust Through Transparency: XAI in Healthcare - Построение доверия через прозрачность: объяснимый ИИ в здравоохранении
+How explainable AI techniques are helping medical professionals understand and trust AI-assisted diagnosis systems. - Как методы объяснимого ИИ помогают медицинским специалистам понимать и доверять системам диагностики с помощью ИИ.
+
+== СТАТЬЯ 7 ==
+January 28, 2026 - 28 января 2026
+AI Safety - Безопасность ИИ
+Adversarial Robustness: Defending Against AI Attacks - Состязательная устойчивость: защита от атак на ИИ
+An overview of current threats to AI systems and our research on building more robust and secure neural networks. - Обзор текущих угроз для систем ИИ и наших исследований по построению более устойчивых и безопасных нейронных сетей.
+
+== СТАТЬЯ 8 ==
+January 20, 2026 - 20 января 2026
+Meta Learning - Мета-обучение
+Few-Shot Learning: Teaching AI to Learn from Limited Data - Обучение с малым количеством примеров: обучение ИИ учиться на ограниченных данных
+Exploring meta-learning approaches that enable AI systems to quickly adapt to new tasks with minimal training examples. - Изучение подходов мета-обучения, которые позволяют системам ИИ быстро адаптироваться к новым задачам с минимальным количеством обучающих примеров.
+
+== СТАТЬЯ 9 ==
+January 15, 2026 - 15 января 2026
+Graph ML - Графовое машинное обучение
+Graph Neural Networks for Drug Discovery - Графовые нейронные сети для открытия лекарств
+How we're using GNNs to predict molecular properties and accelerate the drug discovery process in collaboration with pharma companies. - Как мы используем GNN для прогнозирования молекулярных свойств и ускорения процесса открытия лекарств в сотрудничестве с фармацевтическими компаниями.

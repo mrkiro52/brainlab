@@ -1,0 +1,132 @@
+ПЕРЕВОДЫ ДЛЯ СТРАНИЦЫ: education.html (Образование)
+
+=== ЗАГОЛОВОК ===
+Educational Programs - Образовательные программы
+Comprehensive courses in artificial intelligence, machine learning, and deep learning. From fundamental concepts to cutting-edge research methods. - Комплексные курсы по искусственному интеллекту, машинному обучению и глубокому обучению. От фундаментальных концепций до передовых методов исследований.
+
+=== КУРСЫ ===
+
+== КУРС 1 ==
+Introduction to Deep Learning - Введение в глубокое обучение
+Beginner - Начальный
+12 weeks - 12 недель
+About the Course - О курсе
+This comprehensive introduction to deep learning covers fundamental concepts and practical applications. Students will learn about neural network architectures, backpropagation, optimization algorithms, and regularization techniques. The course includes hands-on projects with real-world datasets and modern deep learning frameworks. - Этот комплексный вводный курс по глубокому обучению охватывает фундаментальные концепции и практические приложения. Студенты узнают об архитектурах нейронных сетей, обратном распространении, алгоритмах оптимизации и методах регуляризации. Курс включает практические проекты с реальными наборами данных и современными фреймворками глубокого обучения.
+
+Topics Covered - Изучаемые темы
+Neural Networks Fundamentals - Основы нейронных сетей
+Backpropagation and Gradient Descent - Обратное распространение и градиентный спуск
+Convolutional Neural Networks - Свёрточные нейронные сети
+Recurrent Neural Networks and LSTMs - Рекуррентные нейронные сети и LSTM
+Optimization Techniques (Adam, RMSprop) - Техники оптимизации (Adam, RMSprop)
+Regularization and Dropout - Регуляризация и Dropout
+Batch Normalization - Пакетная нормализация
+Transfer Learning - Трансферное обучение
+Introduction to PyTorch and TensorFlow - Введение в PyTorch и TensorFlow
+Practical Projects and Applications - Практические проекты и приложения
+
+Course Materials - Учебные материалы
+GitHub Repository - GitHub репозиторий
+Lecture Notes (PDF) - Конспекты лекций (PDF)
+Video Lectures - Видеолекции
+Assignment Solutions - Решения заданий
+
+== КУРС 2 ==
+Advanced Computer Vision - Продвинутое компьютерное зрение
+Advanced - Продвинутый
+14 weeks - 14 недель
+An advanced course exploring state-of-the-art techniques in computer vision. Students will dive deep into modern architectures for object detection, semantic segmentation, and image generation. The course emphasizes both theoretical understanding and practical implementation of cutting-edge research papers. - Продвинутый курс, изучающий современные техники компьютерного зрения. Студенты углубятся в современные архитектуры для обнаружения объектов, семантической сегментации и генерации изображений. Курс делает упор как на теоретическое понимание, так и на практическую реализацию передовых научных статей.
+
+Advanced CNN Architectures (ResNet, EfficientNet) - Продвинутые архитектуры CNN (ResNet, EfficientNet)
+Object Detection (YOLO, Faster R-CNN, DETR) - Обнаружение объектов (YOLO, Faster R-CNN, DETR)
+Semantic and Instance Segmentation - Семантическая и экземплярная сегментация
+Self-Supervised Learning for Vision - Самообучение для зрения
+Vision Transformers (ViT, Swin) - Трансформеры для зрения (ViT, Swin)
+Generative Models (GANs, Diffusion Models) - Генеративные модели (GAN, диффузионные модели)
+3D Vision and NeRF - 3D зрение и NeRF
+Video Understanding - Понимание видео
+Multi-Modal Learning (CLIP, ALIGN) - Мультимодальное обучение (CLIP, ALIGN)
+Research Paper Implementation - Реализация научных статей
+
+Paper Reading List - Список статей для чтения
+Project Examples - Примеры проектов
+
+== КУРС 3 ==
+Natural Language Processing with Transformers - Обработка естественного языка с трансформерами
+Intermediate - Средний
+10 weeks - 10 недель
+This course provides a comprehensive understanding of modern NLP techniques with a focus on transformer architectures. Students will learn to build and fine-tune large language models, implement attention mechanisms, and work with pre-trained models like BERT, GPT, and T5 for various NLP tasks. - Этот курс обеспечивает всестороннее понимание современных техник NLP с акцентом на архитектуры трансформеров. Студенты научатся создавать и дообучать большие языковые модели, реализовывать механизмы внимания и работать с предобученными моделями, такими как BERT, GPT и T5, для различных задач NLP.
+
+Attention Mechanisms and Self-Attention - Механизмы внимания и самовнимание
+Transformer Architecture Deep Dive - Глубокое погружение в архитектуру трансформеров
+Pre-training and Fine-tuning Strategies - Стратегии предобучения и дообучения
+BERT and its Variants - BERT и его варианты
+GPT Models and Text Generation - Модели GPT и генерация текста
+Sequence-to-Sequence Models (T5, BART) - Модели последовательность-к-последовательности (T5, BART)
+Tokenization and Embeddings - Токенизация и эмбеддинги
+Named Entity Recognition - Распознавание именованных сущностей
+Sentiment Analysis and Text Classification - Анализ тональности и классификация текста
+Question Answering Systems - Системы ответов на вопросы
+Prompt Engineering - Инженерия промптов
+Efficient Transformers and Optimization - Эффективные трансформеры и оптимизация
+
+HuggingFace Tutorials - Туториалы HuggingFace
+Colab Notebooks - Блокноты Colab
+
+== КУРС 4 ==
+Reinforcement Learning: Theory and Practice - Обучение с подкреплением: теория и практика
+A rigorous course covering both theoretical foundations and practical implementations of reinforcement learning algorithms. Students will learn about Markov Decision Processes, value-based and policy-based methods, and deep reinforcement learning techniques used in modern AI systems. - Строгий курс, охватывающий как теоретические основы, так и практические реализации алгоритмов обучения с подкреплением. Студенты узнают о марковских процессах принятия решений, методах на основе ценности и политики, а также техниках глубокого обучения с подкреплением, используемых в современных системах ИИ.
+
+Markov Decision Processes - Марковские процессы принятия решений
+Dynamic Programming - Динамическое программирование
+Monte Carlo Methods - Методы Монте-Карло
+Temporal Difference Learning - Обучение на основе временной разности
+Q-Learning and SARSA - Q-обучение и SARSA
+Deep Q-Networks (DQN) - Глубокие Q-сети (DQN)
+Policy Gradient Methods - Методы градиента политики
+Actor-Critic Algorithms - Алгоритмы актёр-критик
+Proximal Policy Optimization (PPO) - Проксимальная оптимизация политики (PPO)
+Multi-Agent Reinforcement Learning - Многоагентное обучение с подкреплением
+Model-Based RL - Обучение с подкреплением на основе модели
+Applications in Robotics and Games - Применение в робототехнике и играх
+
+OpenAI Gym Environments - Окружения OpenAI Gym
+Lecture Slides - Слайды лекций
+
+== КУРС 5 ==
+Machine Learning Optimization - Оптимизация машинного обучения
+8 weeks - 8 недель
+This course explores mathematical foundations and practical aspects of optimization algorithms used in machine learning. Students will gain deep understanding of convergence properties, adaptive methods, and second-order optimization techniques essential for training modern neural networks. - Этот курс исследует математические основы и практические аспекты алгоритмов оптимизации, используемых в машинном обучении. Студенты получат глубокое понимание свойств сходимости, адаптивных методов и методов оптимизации второго порядка, необходимых для обучения современных нейронных сетей.
+
+Convex Optimization Basics - Основы выпуклой оптимизации
+Gradient Descent Variants - Варианты градиентного спуска
+Stochastic Gradient Descent - Стохастический градиентный спуск
+Momentum and Nesterov Acceleration - Импульс и ускорение Нестерова
+Adaptive Learning Rates (AdaGrad, RMSprop, Adam) - Адаптивные скорости обучения (AdaGrad, RMSprop, Adam)
+Second-Order Methods (Newton, L-BFGS) - Методы второго порядка (Ньютон, L-BFGS)
+Coordinate Descent - Покоординатный спуск
+Proximal Methods - Проксимальные методы
+Convergence Analysis - Анализ сходимости
+Distributed Optimization - Распределённая оптимизация
+
+Mathematical Notes - Математические заметки
+Jupyter Notebooks - Jupyter блокноты
+
+== КУРС 6 ==
+Explainable AI and Model Interpretability - Объяснимый ИИ и интерпретируемость моделей
+An essential course for understanding and explaining AI model decisions. Students will learn various interpretability techniques, from feature importance to attention visualization, and how to build transparent and trustworthy machine learning systems that can be understood by both technical and non-technical stakeholders. - Важный курс для понимания и объяснения решений моделей ИИ. Студенты изучат различные методы интерпретируемости, от важности признаков до визуализации внимания, и как строить прозрачные и надёжные системы машинного обучения, понятные как техническим, так и нетехническим заинтересованным сторонам.
+
+Introduction to Interpretability - Введение в интерпретируемость
+LIME and SHAP - LIME и SHAP
+Feature Importance and Permutation Tests - Важность признаков и перестановочные тесты
+Attention Visualization - Визуализация внимания
+Saliency Maps and Grad-CAM - Карты значимости и Grad-CAM
+Counterfactual Explanations - Контрфактические объяснения
+Interpretable Model Architectures - Интерпретируемые архитектуры моделей
+Neural Network Pruning - Обрезка нейронных сетей
+Concept Activation Vectors - Векторы активации концепций
+Fairness and Bias Detection - Обнаружение справедливости и предвзятости
+Case Studies in Healthcare and Finance - Кейс-стади в здравоохранении и финансах
+
+Interpretability Tools Guide - Руководство по инструментам интерпретируемости
+Case Study Reports - Отчёты кейс-стади

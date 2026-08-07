@@ -19,22 +19,6 @@ window.addEventListener('load', function() {
     }
 });
 
-// Language switcher functionality
-const languageSwitcher = document.querySelector('.language-switcher');
-
-if (languageSwitcher) {
-    const langOptions = languageSwitcher.querySelectorAll('.lang-option');
-    
-    langOptions.forEach(option => {
-        option.addEventListener('click', function() {
-            // Remove active class from all options
-            langOptions.forEach(opt => opt.classList.remove('active'));
-            // Add active class to clicked option
-            this.classList.add('active');
-        });
-    });
-}
-
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

@@ -1,0 +1,39 @@
+ПЕРЕВОДЫ ДЛЯ СТРАНИЦЫ: publications.html (Публикации)
+
+=== ЗАГОЛОВОК ===
+Publications - Публикации
+
+=== ФИЛЬТРЫ ===
+Year - Год
+All - Все
+Research Area - Область исследований
+Deep Learning - Глубокое обучение
+Computer Vision - Компьютерное зрение
+NLP - ОЕЯ (Обработка естественного языка)
+Reinforcement Learning - Обучение с подкреплением
+
+=== ПУБЛИКАЦИИ ===
+Neural Architecture Search with Reinforcement Learning for Image Classification - Поиск нейронной архитектуры с обучением с подкреплением для классификации изображений
+We propose a novel approach to neural architecture search using reinforcement learning techniques. Our method automatically discovers high-performing CNN architectures for image classification tasks, achieving state-of-the-art results while reducing search time by 40%. - Мы предлагаем новый подход к поиску нейронной архитектуры с использованием методов обучения с подкреплением. Наш метод автоматически находит высокопроизводительные архитектуры CNN для задач классификации изображений, достигая современных результатов при сокращении времени поиска на 40%.
+
+Convergence Properties of Adaptive Optimization Methods in Non-Convex Settings - Свойства сходимости адаптивных методов оптимизации в невыпуклых условиях
+Rigorous mathematical analysis of convergence guarantees for modern optimization algorithms in deep learning. We establish theoretical bounds for adaptive methods like Adam and RMSprop in non-convex settings with practical implications. - Строгий математический анализ гарантий сходимости для современных алгоритмов оптимизации в глубоком обучении. Мы устанавливаем теоретические границы для адаптивных методов, таких как Adam и RMSprop, в невыпуклых условиях с практическими последствиями.
+
+Self-Supervised Learning for Visual Representations with Contrastive Methods - Самообучение для визуальных представлений с контрастными методами
+Novel approaches to learning robust visual features without labeled data using contrastive learning and geometric transformations. Our method achieves superior performance on downstream tasks with minimal fine-tuning. - Новые подходы к изучению устойчивых визуальных признаков без размеченных данных с использованием контрастного обучения и геометрических преобразований. Наш метод достигает превосходной производительности в последующих задачах с минимальной донастройкой.
+
+Efficient Transformers for Natural Language Understanding Tasks - Эффективные трансформеры для задач понимания естественного языка
+Introducing efficient transformer architectures that reduce computational complexity while maintaining performance on natural language understanding benchmarks. Achieves 3x speedup with comparable accuracy to standard models. - Представляем эффективные архитектуры трансформеров, которые снижают вычислительную сложность при сохранении производительности на тестах понимания естественного языка. Достигает 3-кратного ускорения со сравнимой точностью со стандартными моделями.
+
+Theoretical Foundations of Deep Reinforcement Learning in Continuous Spaces - Теоретические основы глубокого обучения с подкреплением в непрерывных пространствах
+Comprehensive theoretical analysis of deep reinforcement learning algorithms in continuous action and state spaces. We provide convergence guarantees and sample complexity bounds for policy gradient methods. - Всесторонний теоретический анализ алгоритмов глубокого обучения с подкреплением в непрерывных пространствах действий и состояний. Мы предоставляем гарантии сходимости и границы сложности выборки для методов градиента политики.
+
+Interpretable Machine Learning: Methods and Applications - Интерпретируемое машинное обучение: методы и приложения
+Survey of interpretable machine learning methods with applications to critical domains. We present a unified framework for understanding model decisions and provide practical tools for explanation generation and validation. - Обзор методов интерпретируемого машинного обучения с приложениями к критически важным областям. Мы представляем единую структуру для понимания решений модели и предоставляем практические инструменты для генерации и валидации объяснений.
+
+=== КАТЕГОРИИ/БЕЙДЖИ ===
+Optimization - Оптимизация
+Self-Supervised - Самообучение
+Transformers - Трансформеры
+Theory - Теория
+Interpretability - Интерпретируемость

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - BrainLab</title>
+    <script>document.documentElement.lang=localStorage.getItem("brainlab-lang")||"en"</script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,14 +17,14 @@
                         <img src="assets/logo.svg" alt="Logo" class="logo">
                     </a>
                     <nav class="nav">
-                        <a href="research.html">Research</a>
-                        <a href="publications.html">Publications</a>
-                        <a href="education.html">Education</a>
-                        <a href="team.html">Team</a>
-                        <a href="projects.html" class="active">Projects</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="about.html">About</a>
-                        <a href="#contact">Contacts</a>
+                        <a href="research.html" data-i18n="nav.research">Research</a>
+                        <a href="publications.html" data-i18n="nav.publications">Publications</a>
+                        <a href="education.html" data-i18n="nav.education">Education</a>
+                        <a href="team.html" data-i18n="nav.team">Team</a>
+                        <a href="projects.html" class="active" data-i18n="nav.projects">Projects</a>
+                        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+                        <a href="about.html" data-i18n="nav.about">About</a>
+                        <a href="#contact" data-i18n="nav.contacts">Contacts</a>
                     </nav>
                 </div>
                 <div class="header-right">
@@ -41,6 +42,7 @@
             </div>
         </div>
     </header>
+<script>!function(){var t={'nav.home':'Главная','nav.research':'Исследования','nav.publications':'Публикации','nav.education':'Образование','nav.team':'Команда','nav.projects':'Проекты','nav.blog':'Блог','nav.about':'О нас','nav.contacts':'Контакты','mobile.contact-us':'Связаться с нами'};if('ru'===document.documentElement.lang)document.querySelectorAll('[data-i18n]').forEach(function(e){t[e.dataset.i18n]&&(e.textContent=t[e.dataset.i18n]);});}();</script>
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
@@ -53,24 +55,24 @@
                     </svg>
                 </button>
             </div>
-            
+
             <nav class="mobile-nav">
-                <a href="index.html" class="mobile-nav-link">Home</a>
-                <a href="research.html" class="mobile-nav-link">Research</a>
-                <a href="publications.html" class="mobile-nav-link">Publications</a>
-                <a href="education.html" class="mobile-nav-link">Education</a>
-                <a href="team.html" class="mobile-nav-link">Team</a>
-                <a href="projects.html" class="mobile-nav-link">Projects</a>
-                <a href="blog.html" class="mobile-nav-link">Blog</a>
-                <a href="about.html" class="mobile-nav-link">About</a>
-                <a href="#contact" class="mobile-nav-link">Contacts</a>
+                <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">Home</a>
+                <a href="research.html" class="mobile-nav-link" data-i18n="nav.research">Research</a>
+                <a href="publications.html" class="mobile-nav-link" data-i18n="nav.publications">Publications</a>
+                <a href="education.html" class="mobile-nav-link" data-i18n="nav.education">Education</a>
+                <a href="team.html" class="mobile-nav-link" data-i18n="nav.team">Team</a>
+                <a href="projects.html" class="mobile-nav-link" data-i18n="nav.projects">Projects</a>
+                <a href="blog.html" class="mobile-nav-link" data-i18n="nav.blog">Blog</a>
+                <a href="about.html" class="mobile-nav-link" data-i18n="nav.about">About</a>
+                <a href="#contact" class="mobile-nav-link" data-i18n="nav.contacts">Contacts</a>
             </nav>
-            
+
             <div class="mobile-menu-contacts">
                 <a href="mailto:brainlab@mail.ru" class="mobile-menu-link">brainlab@mail.ru</a>
                 <a href="tel:+79999999999" class="mobile-menu-link">+7 (999) 999 99 99</a>
             </div>
-            
+
             <div class="mobile-menu-language">
                 <button class="mobile-language-btn">English</button>
                 <button class="mobile-language-btn">Русский</button>
@@ -81,10 +83,10 @@
     <!-- Projects Hero Section -->
     <section class="projects-hero">
         <div class="container">
-            <h1 class="projects-title">
+            <h1 class="projects-title" data-i18n-html="projects.hero.title">
                 Our <span class="underlined">Projects</span>
             </h1>
-            <p class="projects-subtitle">
+            <p class="projects-subtitle" data-i18n="projects.hero.subtitle">
                 Cutting-edge research projects pushing the boundaries of artificial intelligence. From theoretical breakthroughs to real-world applications.
             </p>
         </div>
@@ -98,28 +100,33 @@
                 <div class="project-item">
                     <button class="project-header">
                         <div class="project-header-left">
-                            <h3 class="project-title">Neural Architecture Search for Medical Imaging</h3>
-                            <span class="project-status active">Active</span>
+                            <h3 class="project-title" data-i18n="proj1.title">Neural Architecture Search for Medical Imaging</h3>
+                            <span class="project-status active" data-i18n="proj.status.active">Active</span>
                         </div>
                         <div class="project-header-right">
                             <span class="project-year">2024 - 2026</span>
-                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </button>
                     <div class="project-content">
                         <div class="project-description">
-                            <h4 class="project-section-title">Project Overview</h4>
-                            <p class="project-text">
-                                This project aims to develop automated neural architecture search methods specifically designed for medical image analysis. We are creating novel algorithms that can discover optimal CNN architectures for tasks such as tumor detection, organ segmentation, and disease classification. Our approach combines reinforcement learning with domain-specific constraints to ensure both high accuracy and clinical interpretability.
-                            </p>
-                            <p class="project-text">
-                                The project is funded by the Russian Science Foundation (RSF) and involves collaboration with leading medical institutions in Moscow. We have already achieved significant results, including a 15% improvement in early cancer detection accuracy compared to manually designed architectures.
-                            </p>
+                            <div class="project-description-image">
+                                <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800" alt="Medical Imaging AI" class="project-img">
+                            </div>
+                            <div class="project-description-text">
+                                <h4 class="project-section-title" data-i18n="proj.overview">Project Overview</h4>
+                                <p class="project-text" data-i18n="proj1.p1">
+                                    This project aims to develop automated neural architecture search methods specifically designed for medical image analysis. We are creating novel algorithms that can discover optimal CNN architectures for tasks such as tumor detection, organ segmentation, and disease classification. Our approach combines reinforcement learning with domain-specific constraints to ensure both high accuracy and clinical interpretability.
+                                </p>
+                                <p class="project-text" data-i18n="proj1.p2">
+                                    The project is funded by the Russian Science Foundation (RSF) and involves collaboration with leading medical institutions in Moscow. We have already achieved significant results, including a 15% improvement in early cancer detection accuracy compared to manually designed architectures.
+                                </p>
+                            </div>
                         </div>
                         <div class="project-team">
-                            <h4 class="project-section-title">Research Team</h4>
+                            <h4 class="project-section-title" data-i18n="proj.lead">Project Lead</h4>
                             <div class="project-team-members">
                                 <span class="project-member">Dr. Anna Petrova (PI)</span>
                                 <span class="project-member">Dr. Elena Ivanova</span>
@@ -129,26 +136,26 @@
                             </div>
                         </div>
                         <div class="project-links">
-                            <h4 class="project-section-title">Resources</h4>
+                            <h4 class="project-section-title" data-i18n="proj.resources">Resources</h4>
                             <div class="project-links-list">
                                 <a href="#" class="project-link">
-                                    <span>Project Website</span>
+                                    <span data-i18n="proj1.link1">Project Website</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Press Release</span>
+                                    <span data-i18n="proj1.link2">Press Release</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>GitHub Repository</span>
+                                    <span data-i18n="proj1.link3">GitHub Repository</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Technical Report (PDF)</span>
+                                    <span data-i18n="proj1.link4">Technical Report (PDF)</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Demo Application</span>
+                                    <span data-i18n="proj1.link5">Demo Application</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                             </div>
@@ -160,28 +167,33 @@
                 <div class="project-item">
                     <button class="project-header">
                         <div class="project-header-left">
-                            <h3 class="project-title">Efficient Transformer Architectures for Mobile Devices</h3>
-                            <span class="project-status active">Active</span>
+                            <h3 class="project-title" data-i18n="proj2.title">Efficient Transformer Architectures for Mobile Devices</h3>
+                            <span class="project-status active" data-i18n="proj.status.active">Active</span>
                         </div>
                         <div class="project-header-right">
                             <span class="project-year">2023 - 2025</span>
-                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </button>
                     <div class="project-content">
                         <div class="project-description">
-                            <h4 class="project-section-title">Project Overview</h4>
-                            <p class="project-text">
-                                With the growing demand for on-device AI, this project focuses on developing lightweight transformer architectures that can run efficiently on mobile and edge devices. We are exploring novel attention mechanisms, quantization techniques, and pruning strategies to reduce computational costs while maintaining high performance.
-                            </p>
-                            <p class="project-text">
-                                Our models achieve up to 10x speedup compared to standard transformers with minimal accuracy loss. The project has applications in real-time translation, text generation, and image recognition on smartphones. We collaborate with major tech companies to ensure practical deployment of our research.
-                            </p>
+                            <div class="project-description-image">
+                                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800" alt="Mobile AI" class="project-img">
+                            </div>
+                            <div class="project-description-text">
+                                <h4 class="project-section-title" data-i18n="proj.overview">Project Overview</h4>
+                                <p class="project-text" data-i18n="proj2.p1">
+                                    With the growing demand for on-device AI, this project focuses on developing lightweight transformer architectures that can run efficiently on mobile and edge devices. We are exploring novel attention mechanisms, quantization techniques, and pruning strategies to reduce computational costs while maintaining high performance.
+                                </p>
+                                <p class="project-text" data-i18n="proj2.p2">
+                                    Our models achieve up to 10x speedup compared to standard transformers with minimal accuracy loss. The project has applications in real-time translation, text generation, and image recognition on smartphones. We collaborate with major tech companies to ensure practical deployment of our research.
+                                </p>
+                            </div>
                         </div>
                         <div class="project-team">
-                            <h4 class="project-section-title">Research Team</h4>
+                            <h4 class="project-section-title" data-i18n="proj.lead">Project Lead</h4>
                             <div class="project-team-members">
                                 <span class="project-member">Dr. Dmitry Kuznetsov (PI)</span>
                                 <span class="project-member">Prof. Mikhail Sokolov</span>
@@ -190,22 +202,22 @@
                             </div>
                         </div>
                         <div class="project-links">
-                            <h4 class="project-section-title">Resources</h4>
+                            <h4 class="project-section-title" data-i18n="proj.resources">Resources</h4>
                             <div class="project-links-list">
                                 <a href="#" class="project-link">
-                                    <span>Project Page</span>
+                                    <span data-i18n="proj2.link1">Project Page</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Press Release</span>
+                                    <span data-i18n="proj2.link2">Press Release</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Open Source Code</span>
+                                    <span data-i18n="proj2.link3">Open Source Code</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Benchmark Results</span>
+                                    <span data-i18n="proj2.link4">Benchmark Results</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                             </div>
@@ -217,28 +229,33 @@
                 <div class="project-item">
                     <button class="project-header">
                         <div class="project-header-left">
-                            <h3 class="project-title">Reinforcement Learning for Autonomous Robotics</h3>
-                            <span class="project-status active">Active</span>
+                            <h3 class="project-title" data-i18n="proj3.title">Reinforcement Learning for Autonomous Robotics</h3>
+                            <span class="project-status active" data-i18n="proj.status.active">Active</span>
                         </div>
                         <div class="project-header-right">
                             <span class="project-year">2024 - 2027</span>
-                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </button>
                     <div class="project-content">
                         <div class="project-description">
-                            <h4 class="project-section-title">Project Overview</h4>
-                            <p class="project-text">
-                                This ambitious project develops advanced reinforcement learning algorithms for autonomous robots operating in complex, dynamic environments. We focus on sample-efficient learning, safe exploration, and transfer learning across different robotic platforms. Our research addresses key challenges in robot manipulation, navigation, and human-robot collaboration.
-                            </p>
-                            <p class="project-text">
-                                The project includes both simulation studies and real-world experiments with industrial robot arms and mobile platforms. We have established partnerships with robotics manufacturers and are working towards deploying our algorithms in warehouse automation and manufacturing scenarios. Our methods have reduced training time by 60% compared to baseline RL approaches.
-                            </p>
+                            <div class="project-description-image">
+                                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800" alt="Robotics AI" class="project-img">
+                            </div>
+                            <div class="project-description-text">
+                                <h4 class="project-section-title" data-i18n="proj.overview">Project Overview</h4>
+                                <p class="project-text" data-i18n="proj3.p1">
+                                    This ambitious project develops advanced reinforcement learning algorithms for autonomous robots operating in complex, dynamic environments. We focus on sample-efficient learning, safe exploration, and transfer learning across different robotic platforms. Our research addresses key challenges in robot manipulation, navigation, and human-robot collaboration.
+                                </p>
+                                <p class="project-text" data-i18n="proj3.p2">
+                                    The project includes both simulation studies and real-world experiments with industrial robot arms and mobile platforms. We have established partnerships with robotics manufacturers and are working towards deploying our algorithms in warehouse automation and manufacturing scenarios. Our methods have reduced training time by 60% compared to baseline RL approaches.
+                                </p>
+                            </div>
                         </div>
                         <div class="project-team">
-                            <h4 class="project-section-title">Research Team</h4>
+                            <h4 class="project-section-title" data-i18n="proj.lead">Project Lead</h4>
                             <div class="project-team-members">
                                 <span class="project-member">Dr. Olga Morozova (PI)</span>
                                 <span class="project-member">Dr. Alexei Volkov</span>
@@ -247,22 +264,22 @@
                             </div>
                         </div>
                         <div class="project-links">
-                            <h4 class="project-section-title">Resources</h4>
+                            <h4 class="project-section-title" data-i18n="proj.resources">Resources</h4>
                             <div class="project-links-list">
                                 <a href="#" class="project-link">
-                                    <span>Project Website</span>
+                                    <span data-i18n="proj3.link1">Project Website</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Press Release</span>
+                                    <span data-i18n="proj3.link2">Press Release</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Simulation Environment</span>
+                                    <span data-i18n="proj3.link3">Simulation Environment</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Video Demonstrations</span>
+                                    <span data-i18n="proj3.link4">Video Demonstrations</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                             </div>
@@ -274,28 +291,33 @@
                 <div class="project-item">
                     <button class="project-header">
                         <div class="project-header-left">
-                            <h3 class="project-title">Explainable AI for Financial Decision Making</h3>
-                            <span class="project-status active">Active</span>
+                            <h3 class="project-title" data-i18n="proj4.title">Explainable AI for Financial Decision Making</h3>
+                            <span class="project-status active" data-i18n="proj.status.active">Active</span>
                         </div>
                         <div class="project-header-right">
                             <span class="project-year">2023 - 2025</span>
-                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </button>
                     <div class="project-content">
                         <div class="project-description">
-                            <h4 class="project-section-title">Project Overview</h4>
-                            <p class="project-text">
-                                Financial institutions require AI systems that not only make accurate predictions but can also explain their decisions to regulators and clients. This project develops interpretable machine learning models for credit scoring, fraud detection, and investment analysis. We combine neural networks with symbolic reasoning to create transparent and trustworthy AI systems.
-                            </p>
-                            <p class="project-text">
-                                Our approach provides human-understandable explanations while maintaining prediction accuracy competitive with black-box models. The project is conducted in partnership with leading Russian banks and fintech companies, ensuring real-world applicability of our methods.
-                            </p>
+                            <div class="project-description-image">
+                                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800" alt="Financial AI" class="project-img">
+                            </div>
+                            <div class="project-description-text">
+                                <h4 class="project-section-title" data-i18n="proj.overview">Project Overview</h4>
+                                <p class="project-text" data-i18n="proj4.p1">
+                                    Financial institutions require AI systems that not only make accurate predictions but can also explain their decisions to regulators and clients. This project develops interpretable machine learning models for credit scoring, fraud detection, and investment analysis. We combine neural networks with symbolic reasoning to create transparent and trustworthy AI systems.
+                                </p>
+                                <p class="project-text" data-i18n="proj4.p2">
+                                    Our approach provides human-understandable explanations while maintaining prediction accuracy competitive with black-box models. The project is conducted in partnership with leading Russian banks and fintech companies, ensuring real-world applicability of our methods.
+                                </p>
+                            </div>
                         </div>
                         <div class="project-team">
-                            <h4 class="project-section-title">Research Team</h4>
+                            <h4 class="project-section-title" data-i18n="proj.lead">Project Lead</h4>
                             <div class="project-team-members">
                                 <span class="project-member">Dr. Elena Ivanova (PI)</span>
                                 <span class="project-member">Tatiana Orlova</span>
@@ -304,22 +326,22 @@
                             </div>
                         </div>
                         <div class="project-links">
-                            <h4 class="project-section-title">Resources</h4>
+                            <h4 class="project-section-title" data-i18n="proj.resources">Resources</h4>
                             <div class="project-links-list">
                                 <a href="#" class="project-link">
-                                    <span>Project Overview</span>
+                                    <span data-i18n="proj4.link1">Project Overview</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Industry Press Release</span>
+                                    <span data-i18n="proj4.link2">Industry Press Release</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Research Papers</span>
+                                    <span data-i18n="proj4.link3">Research Papers</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Case Studies</span>
+                                    <span data-i18n="proj4.link4">Case Studies</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                             </div>
@@ -331,28 +353,33 @@
                 <div class="project-item">
                     <button class="project-header">
                         <div class="project-header-left">
-                            <h3 class="project-title">Federated Learning for Privacy-Preserving Healthcare AI</h3>
-                            <span class="project-status completed">Completed</span>
+                            <h3 class="project-title" data-i18n="proj5.title">Federated Learning for Privacy-Preserving Healthcare AI</h3>
+                            <span class="project-status completed" data-i18n="proj.status.completed">Completed</span>
                         </div>
                         <div class="project-header-right">
                             <span class="project-year">2021 - 2023</span>
-                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </button>
                     <div class="project-content">
                         <div class="project-description">
-                            <h4 class="project-section-title">Project Overview</h4>
-                            <p class="project-text">
-                                This completed project developed federated learning frameworks that enable multiple hospitals to collaboratively train AI models without sharing sensitive patient data. Our methods ensure privacy while achieving model performance comparable to centralized training. The project addressed key challenges in communication efficiency, handling non-IID data distributions, and defending against adversarial attacks.
-                            </p>
-                            <p class="project-text">
-                                The resulting framework was successfully deployed across five major hospitals in Moscow, training diagnostic models on millions of patient records while maintaining full data privacy. This work has been published in top-tier conferences and has influenced healthcare AI policy discussions.
-                            </p>
+                            <div class="project-description-image">
+                                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800" alt="Healthcare AI" class="project-img">
+                            </div>
+                            <div class="project-description-text">
+                                <h4 class="project-section-title" data-i18n="proj.overview">Project Overview</h4>
+                                <p class="project-text" data-i18n="proj5.p1">
+                                    This completed project developed federated learning frameworks that enable multiple hospitals to collaboratively train AI models without sharing sensitive patient data. Our methods ensure privacy while achieving model performance comparable to centralized training. The project addressed key challenges in communication efficiency, handling non-IID data distributions, and defending against adversarial attacks.
+                                </p>
+                                <p class="project-text" data-i18n="proj5.p2">
+                                    The resulting framework was successfully deployed across five major hospitals in Moscow, training diagnostic models on millions of patient records while maintaining full data privacy. This work has been published in top-tier conferences and has influenced healthcare AI policy discussions.
+                                </p>
+                            </div>
                         </div>
                         <div class="project-team">
-                            <h4 class="project-section-title">Research Team</h4>
+                            <h4 class="project-section-title" data-i18n="proj.lead">Project Lead</h4>
                             <div class="project-team-members">
                                 <span class="project-member">Prof. Mikhail Sokolov (PI)</span>
                                 <span class="project-member">Dr. Anna Petrova</span>
@@ -361,26 +388,26 @@
                             </div>
                         </div>
                         <div class="project-links">
-                            <h4 class="project-section-title">Resources</h4>
+                            <h4 class="project-section-title" data-i18n="proj.resources">Resources</h4>
                             <div class="project-links-list">
                                 <a href="#" class="project-link">
-                                    <span>Final Report</span>
+                                    <span data-i18n="proj5.link1">Final Report</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Press Release</span>
+                                    <span data-i18n="proj5.link2">Press Release</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Open Source Framework</span>
+                                    <span data-i18n="proj5.link3">Open Source Framework</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Published Papers</span>
+                                    <span data-i18n="proj5.link4">Published Papers</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Impact Assessment</span>
+                                    <span data-i18n="proj5.link5">Impact Assessment</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                             </div>
@@ -392,28 +419,33 @@
                 <div class="project-item">
                     <button class="project-header">
                         <div class="project-header-left">
-                            <h3 class="project-title">Self-Supervised Learning for Low-Resource Languages</h3>
-                            <span class="project-status completed">Completed</span>
+                            <h3 class="project-title" data-i18n="proj6.title">Self-Supervised Learning for Low-Resource Languages</h3>
+                            <span class="project-status completed" data-i18n="proj.status.completed">Completed</span>
                         </div>
                         <div class="project-header-right">
                             <span class="project-year">2022 - 2024</span>
-                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </button>
                     <div class="project-content">
                         <div class="project-description">
-                            <h4 class="project-section-title">Project Overview</h4>
-                            <p class="project-text">
-                                This project tackled the challenge of building high-quality NLP models for languages with limited labeled data. Using self-supervised learning and transfer learning techniques, we developed methods to leverage large amounts of unlabeled text in low-resource languages. Our approach combines multilingual pre-training with language-specific fine-tuning strategies.
-                            </p>
-                            <p class="project-text">
-                                The project successfully created NLP tools for several minority languages of the Russian Federation, including machine translation, sentiment analysis, and named entity recognition systems. Our models are now being used by educational institutions and cultural organizations to preserve and promote linguistic diversity.
-                            </p>
+                            <div class="project-description-image">
+                                <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800" alt="NLP Languages" class="project-img">
+                            </div>
+                            <div class="project-description-text">
+                                <h4 class="project-section-title" data-i18n="proj.overview">Project Overview</h4>
+                                <p class="project-text" data-i18n="proj6.p1">
+                                    This project tackled the challenge of building high-quality NLP models for languages with limited labeled data. Using self-supervised learning and transfer learning techniques, we developed methods to leverage large amounts of unlabeled text in low-resource languages. Our approach combines multilingual pre-training with language-specific fine-tuning strategies.
+                                </p>
+                                <p class="project-text" data-i18n="proj6.p2">
+                                    The project successfully created NLP tools for several minority languages of the Russian Federation, including machine translation, sentiment analysis, and named entity recognition systems. Our models are now being used by educational institutions and cultural organizations to preserve and promote linguistic diversity.
+                                </p>
+                            </div>
                         </div>
                         <div class="project-team">
-                            <h4 class="project-section-title">Research Team</h4>
+                            <h4 class="project-section-title" data-i18n="proj.lead">Project Lead</h4>
                             <div class="project-team-members">
                                 <span class="project-member">Dr. Dmitry Kuznetsov (PI)</span>
                                 <span class="project-member">Ivan Smirnov</span>
@@ -422,26 +454,26 @@
                             </div>
                         </div>
                         <div class="project-links">
-                            <h4 class="project-section-title">Resources</h4>
+                            <h4 class="project-section-title" data-i18n="proj.resources">Resources</h4>
                             <div class="project-links-list">
                                 <a href="#" class="project-link">
-                                    <span>Project Summary</span>
+                                    <span data-i18n="proj6.link1">Project Summary</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Press Release</span>
+                                    <span data-i18n="proj6.link2">Press Release</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Pre-trained Models</span>
+                                    <span data-i18n="proj6.link3">Pre-trained Models</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Datasets</span>
+                                    <span data-i18n="proj6.link4">Datasets</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                                 <a href="#" class="project-link">
-                                    <span>Publications</span>
+                                    <span data-i18n="proj6.link5">Publications</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="project-link-arrow">
                                 </a>
                             </div>
@@ -457,14 +489,14 @@
         <div class="contact-left">
             <div class="contact-info-blocks">
                 <div class="contact-block">
-                    <h3 class="contact-block-title">Contacts</h3>
-                    <p class="contact-address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
+                    <h3 class="contact-block-title" data-i18n="contact.title">Contacts</h3>
+                    <p class="contact-address" data-i18n="contact.address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
                     <a href="mailto:brainlab@mail.ru" class="contact-link">brainlab@mail.ru</a>
                     <a href="tel:+79999999999" class="contact-link">+7 (999) 999 99 99</a>
                 </div>
 
                 <div class="contact-block">
-                    <h3 class="contact-block-title">BrainLab on social media</h3>
+                    <h3 class="contact-block-title" data-i18n="contact.social">BrainLab on social media</h3>
                     <div class="social-links">
                         <a href="#" class="social-link">
                             <span>Telegram</span>
@@ -486,45 +518,46 @@
                 </div>
 
                 <div class="contact-block">
-                    <p class="copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
+                    <p class="copyright" data-i18n="contact.copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
 
         <div class="contact-right">
             <div class="contact-form-wrapper">
-                <h3 class="form-title">Fill out the form and leave a request</h3>
-                
+                <h3 class="form-title" data-i18n="form.title">Fill out the form and leave a request</h3>
+
                 <form class="contact-form">
                     <div class="form-group">
-                        <label class="form-label">NAME</label>
-                        <input type="text" class="form-input" placeholder="Enter your name">
+                        <label class="form-label" data-i18n="form.name">NAME</label>
+                        <input type="text" class="form-input" placeholder="Enter your name" data-i18n-placeholder="form.name.placeholder">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">PHONE</label>
-                        <input type="tel" class="form-input" placeholder="Enter your phone">
+                        <label class="form-label" data-i18n="form.phone">PHONE</label>
+                        <input type="tel" class="form-input" placeholder="Enter your phone" data-i18n-placeholder="form.phone.placeholder">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">EMAIL</label>
-                        <input type="email" class="form-input" placeholder="Enter your email">
+                        <label class="form-label" data-i18n="form.email">EMAIL</label>
+                        <input type="email" class="form-input" placeholder="Enter your email" data-i18n-placeholder="form.email.placeholder">
                     </div>
 
                     <div class="form-checkbox">
                         <input type="checkbox" id="terms" class="checkbox-input">
-                        <label for="terms" class="checkbox-label">
+                        <label for="terms" class="checkbox-label" data-i18n-html="form.agree">
                             I agree to <span class="underline-text">Terms of Service</span> and <span class="underline-text">Privacy Policy</span>
                         </label>
                     </div>
 
-                    <button type="submit" class="form-submit-btn">Contact Us</button>
+                    <button type="submit" class="form-submit-btn" data-i18n="form.submit">Contact Us</button>
                 </form>
             </div>
         </div>
     </section>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
-    <script src="projects-script.js"></script>
+    <script src="site-projects.js"></script>
 </body>
 </html>

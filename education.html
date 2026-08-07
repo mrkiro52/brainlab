@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education - BrainLab</title>
+    <script>document.documentElement.lang=localStorage.getItem("brainlab-lang")||"en"</script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,14 +17,14 @@
                         <img src="assets/logo.svg" alt="Logo" class="logo">
                     </a>
                     <nav class="nav">
-                        <a href="research.html">Research</a>
-                        <a href="publications.html">Publications</a>
-                        <a href="education.html" class="active">Education</a>
-                        <a href="team.html">Team</a>
-                        <a href="projects.html">Projects</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="about.html">About</a>
-                        <a href="#contact">Contacts</a>
+                        <a href="research.html" data-i18n="nav.research">Research</a>
+                        <a href="publications.html" data-i18n="nav.publications">Publications</a>
+                        <a href="education.html" class="active" data-i18n="nav.education">Education</a>
+                        <a href="team.html" data-i18n="nav.team">Team</a>
+                        <a href="projects.html" data-i18n="nav.projects">Projects</a>
+                        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+                        <a href="about.html" data-i18n="nav.about">About</a>
+                        <a href="#contact" data-i18n="nav.contacts">Contacts</a>
                     </nav>
                 </div>
                 <div class="header-right">
@@ -41,6 +42,7 @@
             </div>
         </div>
     </header>
+<script>!function(){var t={'nav.home':'Главная','nav.research':'Исследования','nav.publications':'Публикации','nav.education':'Образование','nav.team':'Команда','nav.projects':'Проекты','nav.blog':'Блог','nav.about':'О нас','nav.contacts':'Контакты','mobile.contact-us':'Связаться с нами'};if('ru'===document.documentElement.lang)document.querySelectorAll('[data-i18n]').forEach(function(e){t[e.dataset.i18n]&&(e.textContent=t[e.dataset.i18n]);});}();</script>
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
@@ -53,24 +55,24 @@
                     </svg>
                 </button>
             </div>
-            
+
             <nav class="mobile-nav">
-                <a href="index.html" class="mobile-nav-link">Home</a>
-                <a href="research.html" class="mobile-nav-link">Research</a>
-                <a href="publications.html" class="mobile-nav-link">Publications</a>
-                <a href="education.html" class="mobile-nav-link">Education</a>
-                <a href="team.html" class="mobile-nav-link">Team</a>
-                <a href="projects.html" class="mobile-nav-link">Projects</a>
-                <a href="blog.html" class="mobile-nav-link">Blog</a>
-                <a href="about.html" class="mobile-nav-link">About</a>
-                <a href="#contact" class="mobile-nav-link">Contacts</a>
+                <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">Home</a>
+                <a href="research.html" class="mobile-nav-link" data-i18n="nav.research">Research</a>
+                <a href="publications.html" class="mobile-nav-link" data-i18n="nav.publications">Publications</a>
+                <a href="education.html" class="mobile-nav-link" data-i18n="nav.education">Education</a>
+                <a href="team.html" class="mobile-nav-link" data-i18n="nav.team">Team</a>
+                <a href="projects.html" class="mobile-nav-link" data-i18n="nav.projects">Projects</a>
+                <a href="blog.html" class="mobile-nav-link" data-i18n="nav.blog">Blog</a>
+                <a href="about.html" class="mobile-nav-link" data-i18n="nav.about">About</a>
+                <a href="#contact" class="mobile-nav-link" data-i18n="nav.contacts">Contacts</a>
             </nav>
-            
+
             <div class="mobile-menu-contacts">
                 <a href="mailto:brainlab@mail.ru" class="mobile-menu-link">brainlab@mail.ru</a>
                 <a href="tel:+79999999999" class="mobile-menu-link">+7 (999) 999 99 99</a>
             </div>
-            
+
             <div class="mobile-menu-language">
                 <button class="mobile-language-btn">English</button>
                 <button class="mobile-language-btn">Русский</button>
@@ -81,10 +83,10 @@
     <!-- Education Hero Section -->
     <section class="education-hero">
         <div class="container">
-            <h1 class="education-title">
+            <h1 class="education-title" data-i18n-html="edu.hero.title">
                 <span class="underlined">Educational</span> Programs
             </h1>
-            <p class="education-subtitle">
+            <p class="education-subtitle" data-i18n="edu.hero.subtitle">
                 Comprehensive courses in artificial intelligence, machine learning, and deep learning. From fundamental concepts to cutting-edge research methods.
             </p>
         </div>
@@ -98,26 +100,26 @@
                 <div class="course-item">
                     <button class="course-header">
                         <div class="course-header-left">
-                            <h3 class="course-title">Introduction to Deep Learning</h3>
-                            <span class="course-level">Beginner</span>
+                            <h3 class="course-title" data-i18n="edu.course1.title">Introduction to Deep Learning</h3>
+                            <span class="course-level" data-i18n="edu.course1.level">Beginner</span>
                         </div>
                         <div class="course-header-right">
-                            <span class="course-duration">12 weeks</span>
-                            <svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="course-duration" data-i18n="edu.course1.duration">12 weeks</span>
+                            <svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </button>
                     <div class="course-content">
                         <div class="course-description">
-                            <h4 class="course-section-title">About the Course</h4>
-                            <p class="course-text">
+                            <h4 class="course-section-title" data-i18n="edu.about">About the Course</h4>
+                            <p class="course-text" data-i18n="edu.course1.desc">
                                 This comprehensive introduction to deep learning covers fundamental concepts and practical applications. Students will learn about neural network architectures, backpropagation, optimization algorithms, and regularization techniques. The course includes hands-on projects with real-world datasets and modern deep learning frameworks.
                             </p>
                         </div>
                         <div class="course-topics">
-                            <h4 class="course-section-title">Topics Covered</h4>
-                            <ul class="course-topics-list">
+                            <h4 class="course-section-title" data-i18n="edu.topics">Topics Covered</h4>
+                            <ul class="course-topics-list" data-i18n-list="edu.course1.topics">
                                 <li>Neural Networks Fundamentals</li>
                                 <li>Backpropagation and Gradient Descent</li>
                                 <li>Convolutional Neural Networks</li>
@@ -131,22 +133,22 @@
                             </ul>
                         </div>
                         <div class="course-links">
-                            <h4 class="course-section-title">Course Materials</h4>
+                            <h4 class="course-section-title" data-i18n="edu.materials">Course Materials</h4>
                             <div class="course-links-list">
                                 <a href="#" class="course-link">
-                                    <span>GitHub Repository</span>
+                                    <span data-i18n="edu.link.github">GitHub Repository</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>Lecture Notes (PDF)</span>
+                                    <span data-i18n="edu.link.notes">Lecture Notes (PDF)</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>Video Lectures</span>
+                                    <span data-i18n="edu.link.video">Video Lectures</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>Assignment Solutions</span>
+                                    <span data-i18n="edu.link.solutions">Assignment Solutions</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                             </div>
@@ -158,26 +160,26 @@
                 <div class="course-item">
                     <button class="course-header">
                         <div class="course-header-left">
-                            <h3 class="course-title">Advanced Computer Vision</h3>
-                            <span class="course-level">Advanced</span>
+                            <h3 class="course-title" data-i18n="edu.course2.title">Advanced Computer Vision</h3>
+                            <span class="course-level" data-i18n="edu.course2.level">Advanced</span>
                         </div>
                         <div class="course-header-right">
-                            <span class="course-duration">14 weeks</span>
-                            <svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="course-duration" data-i18n="edu.course2.duration">14 weeks</span>
+                            <svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </button>
                     <div class="course-content">
                         <div class="course-description">
-                            <h4 class="course-section-title">About the Course</h4>
-                            <p class="course-text">
+                            <h4 class="course-section-title" data-i18n="edu.about">About the Course</h4>
+                            <p class="course-text" data-i18n="edu.course2.desc">
                                 An advanced course exploring state-of-the-art techniques in computer vision. Students will dive deep into modern architectures for object detection, semantic segmentation, and image generation. The course emphasizes both theoretical understanding and practical implementation of cutting-edge research papers.
                             </p>
                         </div>
                         <div class="course-topics">
-                            <h4 class="course-section-title">Topics Covered</h4>
-                            <ul class="course-topics-list">
+                            <h4 class="course-section-title" data-i18n="edu.topics">Topics Covered</h4>
+                            <ul class="course-topics-list" data-i18n-list="edu.course2.topics">
                                 <li>Advanced CNN Architectures (ResNet, EfficientNet)</li>
                                 <li>Object Detection (YOLO, Faster R-CNN, DETR)</li>
                                 <li>Semantic and Instance Segmentation</li>
@@ -191,18 +193,18 @@
                             </ul>
                         </div>
                         <div class="course-links">
-                            <h4 class="course-section-title">Course Materials</h4>
+                            <h4 class="course-section-title" data-i18n="edu.materials">Course Materials</h4>
                             <div class="course-links-list">
                                 <a href="#" class="course-link">
-                                    <span>GitHub Repository</span>
+                                    <span data-i18n="edu.link.github">GitHub Repository</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>Paper Reading List</span>
+                                    <span data-i18n="edu.link.papers">Paper Reading List</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>Project Examples</span>
+                                    <span data-i18n="edu.link.projects">Project Examples</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                             </div>
@@ -214,26 +216,26 @@
                 <div class="course-item">
                     <button class="course-header">
                         <div class="course-header-left">
-                            <h3 class="course-title">Natural Language Processing with Transformers</h3>
-                            <span class="course-level">Intermediate</span>
+                            <h3 class="course-title" data-i18n="edu.course3.title">Natural Language Processing with Transformers</h3>
+                            <span class="course-level" data-i18n="edu.course3.level">Intermediate</span>
                         </div>
                         <div class="course-header-right">
-                            <span class="course-duration">10 weeks</span>
-                            <svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="course-duration" data-i18n="edu.course3.duration">10 weeks</span>
+                            <svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </button>
                     <div class="course-content">
                         <div class="course-description">
-                            <h4 class="course-section-title">About the Course</h4>
-                            <p class="course-text">
+                            <h4 class="course-section-title" data-i18n="edu.about">About the Course</h4>
+                            <p class="course-text" data-i18n="edu.course3.desc">
                                 This course provides a comprehensive understanding of modern NLP techniques with a focus on transformer architectures. Students will learn to build and fine-tune large language models, implement attention mechanisms, and work with pre-trained models like BERT, GPT, and T5 for various NLP tasks.
                             </p>
                         </div>
                         <div class="course-topics">
-                            <h4 class="course-section-title">Topics Covered</h4>
-                            <ul class="course-topics-list">
+                            <h4 class="course-section-title" data-i18n="edu.topics">Topics Covered</h4>
+                            <ul class="course-topics-list" data-i18n-list="edu.course3.topics">
                                 <li>Attention Mechanisms and Self-Attention</li>
                                 <li>Transformer Architecture Deep Dive</li>
                                 <li>Pre-training and Fine-tuning Strategies</li>
@@ -249,18 +251,18 @@
                             </ul>
                         </div>
                         <div class="course-links">
-                            <h4 class="course-section-title">Course Materials</h4>
+                            <h4 class="course-section-title" data-i18n="edu.materials">Course Materials</h4>
                             <div class="course-links-list">
                                 <a href="#" class="course-link">
-                                    <span>GitHub Repository</span>
+                                    <span data-i18n="edu.link.github">GitHub Repository</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>HuggingFace Tutorials</span>
+                                    <span data-i18n="edu.link.huggingface">HuggingFace Tutorials</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>Colab Notebooks</span>
+                                    <span data-i18n="edu.link.colab">Colab Notebooks</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                             </div>
@@ -272,26 +274,26 @@
                 <div class="course-item">
                     <button class="course-header">
                         <div class="course-header-left">
-                            <h3 class="course-title">Reinforcement Learning: Theory and Practice</h3>
-                            <span class="course-level">Advanced</span>
+                            <h3 class="course-title" data-i18n="edu.course4.title">Reinforcement Learning: Theory and Practice</h3>
+                            <span class="course-level" data-i18n="edu.course4.level">Advanced</span>
                         </div>
                         <div class="course-header-right">
-                            <span class="course-duration">12 weeks</span>
-                            <svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="course-duration" data-i18n="edu.course4.duration">12 weeks</span>
+                            <svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </button>
                     <div class="course-content">
                         <div class="course-description">
-                            <h4 class="course-section-title">About the Course</h4>
-                            <p class="course-text">
+                            <h4 class="course-section-title" data-i18n="edu.about">About the Course</h4>
+                            <p class="course-text" data-i18n="edu.course4.desc">
                                 A rigorous course covering both theoretical foundations and practical implementations of reinforcement learning algorithms. Students will learn about Markov Decision Processes, value-based and policy-based methods, and deep reinforcement learning techniques used in modern AI systems.
                             </p>
                         </div>
                         <div class="course-topics">
-                            <h4 class="course-section-title">Topics Covered</h4>
-                            <ul class="course-topics-list">
+                            <h4 class="course-section-title" data-i18n="edu.topics">Topics Covered</h4>
+                            <ul class="course-topics-list" data-i18n-list="edu.course4.topics">
                                 <li>Markov Decision Processes</li>
                                 <li>Dynamic Programming</li>
                                 <li>Monte Carlo Methods</li>
@@ -307,18 +309,18 @@
                             </ul>
                         </div>
                         <div class="course-links">
-                            <h4 class="course-section-title">Course Materials</h4>
+                            <h4 class="course-section-title" data-i18n="edu.materials">Course Materials</h4>
                             <div class="course-links-list">
                                 <a href="#" class="course-link">
-                                    <span>GitHub Repository</span>
+                                    <span data-i18n="edu.link.github">GitHub Repository</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>OpenAI Gym Environments</span>
+                                    <span data-i18n="edu.link.gym">OpenAI Gym Environments</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>Lecture Slides</span>
+                                    <span data-i18n="edu.link.slides">Lecture Slides</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                             </div>
@@ -330,26 +332,26 @@
                 <div class="course-item">
                     <button class="course-header">
                         <div class="course-header-left">
-                            <h3 class="course-title">Machine Learning Optimization</h3>
-                            <span class="course-level">Intermediate</span>
+                            <h3 class="course-title" data-i18n="edu.course5.title">Machine Learning Optimization</h3>
+                            <span class="course-level" data-i18n="edu.course5.level">Intermediate</span>
                         </div>
                         <div class="course-header-right">
-                            <span class="course-duration">8 weeks</span>
-                            <svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="course-duration" data-i18n="edu.course5.duration">8 weeks</span>
+                            <svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </button>
                     <div class="course-content">
                         <div class="course-description">
-                            <h4 class="course-section-title">About the Course</h4>
-                            <p class="course-text">
+                            <h4 class="course-section-title" data-i18n="edu.about">About the Course</h4>
+                            <p class="course-text" data-i18n="edu.course5.desc">
                                 This course explores mathematical foundations and practical aspects of optimization algorithms used in machine learning. Students will gain deep understanding of convergence properties, adaptive methods, and second-order optimization techniques essential for training modern neural networks.
                             </p>
                         </div>
                         <div class="course-topics">
-                            <h4 class="course-section-title">Topics Covered</h4>
-                            <ul class="course-topics-list">
+                            <h4 class="course-section-title" data-i18n="edu.topics">Topics Covered</h4>
+                            <ul class="course-topics-list" data-i18n-list="edu.course5.topics">
                                 <li>Convex Optimization Basics</li>
                                 <li>Gradient Descent Variants</li>
                                 <li>Stochastic Gradient Descent</li>
@@ -363,18 +365,18 @@
                             </ul>
                         </div>
                         <div class="course-links">
-                            <h4 class="course-section-title">Course Materials</h4>
+                            <h4 class="course-section-title" data-i18n="edu.materials">Course Materials</h4>
                             <div class="course-links-list">
                                 <a href="#" class="course-link">
-                                    <span>GitHub Repository</span>
+                                    <span data-i18n="edu.link.github">GitHub Repository</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>Mathematical Notes</span>
+                                    <span data-i18n="edu.link.math">Mathematical Notes</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>Jupyter Notebooks</span>
+                                    <span data-i18n="edu.link.jupyter">Jupyter Notebooks</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                             </div>
@@ -386,26 +388,26 @@
                 <div class="course-item">
                     <button class="course-header">
                         <div class="course-header-left">
-                            <h3 class="course-title">Explainable AI and Model Interpretability</h3>
-                            <span class="course-level">Advanced</span>
+                            <h3 class="course-title" data-i18n="edu.course6.title">Explainable AI and Model Interpretability</h3>
+                            <span class="course-level" data-i18n="edu.course6.level">Advanced</span>
                         </div>
                         <div class="course-header-right">
-                            <span class="course-duration">10 weeks</span>
-                            <svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="course-duration" data-i18n="edu.course6.duration">10 weeks</span>
+                            <svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </button>
                     <div class="course-content">
                         <div class="course-description">
-                            <h4 class="course-section-title">About the Course</h4>
-                            <p class="course-text">
+                            <h4 class="course-section-title" data-i18n="edu.about">About the Course</h4>
+                            <p class="course-text" data-i18n="edu.course6.desc">
                                 An essential course for understanding and explaining AI model decisions. Students will learn various interpretability techniques, from feature importance to attention visualization, and how to build transparent and trustworthy machine learning systems that can be understood by both technical and non-technical stakeholders.
                             </p>
                         </div>
                         <div class="course-topics">
-                            <h4 class="course-section-title">Topics Covered</h4>
-                            <ul class="course-topics-list">
+                            <h4 class="course-section-title" data-i18n="edu.topics">Topics Covered</h4>
+                            <ul class="course-topics-list" data-i18n-list="edu.course6.topics">
                                 <li>Introduction to Interpretability</li>
                                 <li>LIME and SHAP</li>
                                 <li>Feature Importance and Permutation Tests</li>
@@ -420,18 +422,18 @@
                             </ul>
                         </div>
                         <div class="course-links">
-                            <h4 class="course-section-title">Course Materials</h4>
+                            <h4 class="course-section-title" data-i18n="edu.materials">Course Materials</h4>
                             <div class="course-links-list">
                                 <a href="#" class="course-link">
-                                    <span>GitHub Repository</span>
+                                    <span data-i18n="edu.link.github">GitHub Repository</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>Interpretability Tools Guide</span>
+                                    <span data-i18n="edu.link.interp">Interpretability Tools Guide</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                                 <a href="#" class="course-link">
-                                    <span>Case Study Reports</span>
+                                    <span data-i18n="edu.link.cases">Case Study Reports</span>
                                     <img src="assets/arrowlong.svg" alt="Arrow" class="course-link-arrow">
                                 </a>
                             </div>
@@ -447,14 +449,14 @@
         <div class="contact-left">
             <div class="contact-info-blocks">
                 <div class="contact-block">
-                    <h3 class="contact-block-title">Contacts</h3>
-                    <p class="contact-address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
+                    <h3 class="contact-block-title" data-i18n="contact.title">Contacts</h3>
+                    <p class="contact-address" data-i18n="contact.address">Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412.</p>
                     <a href="mailto:brainlab@mail.ru" class="contact-link">brainlab@mail.ru</a>
                     <a href="tel:+79999999999" class="contact-link">+7 (999) 999 99 99</a>
                 </div>
 
                 <div class="contact-block">
-                    <h3 class="contact-block-title">BrainLab on social media</h3>
+                    <h3 class="contact-block-title" data-i18n="contact.social">BrainLab on social media</h3>
                     <div class="social-links">
                         <a href="#" class="social-link">
                             <span>Telegram</span>
@@ -476,45 +478,46 @@
                 </div>
 
                 <div class="contact-block">
-                    <p class="copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
+                    <p class="copyright" data-i18n="contact.copyright">© 2026, BrainLab, Inc. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
 
         <div class="contact-right">
             <div class="contact-form-wrapper">
-                <h3 class="form-title">Fill out the form and leave a request</h3>
-                
+                <h3 class="form-title" data-i18n="form.title">Fill out the form and leave a request</h3>
+
                 <form class="contact-form">
                     <div class="form-group">
-                        <label class="form-label">NAME</label>
-                        <input type="text" class="form-input" placeholder="Enter your name">
+                        <label class="form-label" data-i18n="form.name">NAME</label>
+                        <input type="text" class="form-input" placeholder="Enter your name" data-i18n-placeholder="form.name.placeholder">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">PHONE</label>
-                        <input type="tel" class="form-input" placeholder="Enter your phone">
+                        <label class="form-label" data-i18n="form.phone">PHONE</label>
+                        <input type="tel" class="form-input" placeholder="Enter your phone" data-i18n-placeholder="form.phone.placeholder">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">EMAIL</label>
-                        <input type="email" class="form-input" placeholder="Enter your email">
+                        <label class="form-label" data-i18n="form.email">EMAIL</label>
+                        <input type="email" class="form-input" placeholder="Enter your email" data-i18n-placeholder="form.email.placeholder">
                     </div>
 
                     <div class="form-checkbox">
                         <input type="checkbox" id="terms" class="checkbox-input">
-                        <label for="terms" class="checkbox-label">
+                        <label for="terms" class="checkbox-label" data-i18n-html="form.agree">
                             I agree to <span class="underline-text">Terms of Service</span> and <span class="underline-text">Privacy Policy</span>
                         </label>
                     </div>
 
-                    <button type="submit" class="form-submit-btn">Contact Us</button>
+                    <button type="submit" class="form-submit-btn" data-i18n="form.submit">Contact Us</button>
                 </form>
             </div>
         </div>
     </section>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
-    <script src="education-script.js"></script>
+    <script src="site-education.js"></script>
 </body>
 </html>

@@ -226,17 +226,18 @@ const teamData = {
     }
 };
 
-// Modal functionality
+// Modal functionality — uses event delegation to work with dynamically rendered cards
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('teamModal');
     const modalOverlay = document.getElementById('teamModalOverlay');
     const modalClose = document.getElementById('teamModalClose');
-    const teamCards = document.querySelectorAll('.team-card');
 
-    // Open modal
-    teamCards.forEach(card => {
-        card.addEventListener('click', function() {
-            const memberId = this.getAttribute('data-member');
+    // Open modal via event delegation (works for static + dynamic cards)
+    document.addEventListener('click', function(e) {
+        const card = e.target.closest('.team-card');
+        if (!card) return;
+        {
+            const memberId = card.getAttribute('data-member');
             const member = teamData[memberId];
             
             if (member) {
@@ -289,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
             }
-        });
+        }
     });
 
     // Close modal

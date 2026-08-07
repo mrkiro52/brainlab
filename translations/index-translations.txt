@@ -1,0 +1,81 @@
+ПЕРЕВОДЫ ДЛЯ СТРАНИЦЫ: index.html (Главная страница)
+
+=== НАВИГАЦИЯ ===
+Research - Исследования
+Publications - Публикации
+Education - Образование
+Team - Команда
+Projects - Проекты
+Blog - Блог
+About - О нас
+Contacts - Контакты
+Home - Главная
+EN - АНГ
+RU - РУС
+
+=== HERO СЕКЦИЯ ===
+Laboratory - Лаборатория
+for Fundamental Research in Artificial Intelligence at MIPT - фундаментальных исследований искусственного интеллекта в МФТИ
+Advancing the mathematical foundations, algorithms, and theoretical principles of next-generation AI systems. - Разработка математических основ, алгоритмов и теоретических принципов систем ИИ нового поколения.
+
+=== TEAM СЕКЦИЯ ===
+Our team unites researchers and students dedicated to advancing the fundamental foundations of artificial intelligence. We combine rigorous theory with collaborative research to drive scientific excellence and develop the next generation of AI experts. - Наша команда объединяет исследователей и студентов, занимающихся развитием фундаментальных основ искусственного интеллекта. Мы сочетаем строгую теорию с совместными исследованиями для достижения научного превосходства и подготовки нового поколения экспертов в области ИИ.
+All Team - Вся команда
+
+=== КАРТОЧКИ ОБРАЗОВАНИЯ ===
+Master's & PhD Programs - Магистерские и аспирантские программы
+We offer specialized graduate programs in AI theory, machine learning, and computational mathematics with world-class faculty mentorship and cutting-edge research opportunities. - Мы предлагаем специализированные программы магистратуры по теории ИИ, машинному обучению и вычислительной математике с наставничеством преподавателей мирового уровня и передовыми исследовательскими возможностями.
+
+Advanced Courses - Продвинутые курсы
+Deep learning architectures, reinforcement learning, probabilistic models, and optimization theory taught by leading researchers in the field of artificial intelligence. - Архитектуры глубокого обучения, обучение с подкреплением, вероятностные модели и теория оптимизации от ведущих исследователей в области искусственного интеллекта.
+
+Research Supervision - Научное руководство
+Individual mentorship from experienced researchers for bachelor's, master's, and doctoral theses in theoretical AI, neural networks, and computational intelligence. - Индивидуальное наставничество от опытных исследователей для бакалаврских, магистерских и докторских диссертаций по теоретическому ИИ, нейронным сетям и вычислительному интеллекту.
+
+=== ПУБЛИКАЦИИ ===
+Top publications - Топовые публикации
+Machine Learning - Машинное обучение
+Neural Architecture Search with Reinforcement Learning - Поиск нейронной архитектуры с обучением с подкреплением
+Exploring automated methods for discovering optimal neural network architectures through reinforcement learning algorithms and theoretical analysis. - Изучение автоматизированных методов поиска оптимальных архитектур нейронных сетей с помощью алгоритмов обучения с подкреплением и теоретического анализа.
+
+Theoretical AI - Теоретический ИИ
+Convergence Properties of Adaptive Optimization Methods - Свойства сходимости адаптивных методов оптимизации
+Rigorous mathematical analysis of convergence guarantees for modern optimization algorithms in deep learning with non-convex objectives. - Строгий математический анализ гарантий сходимости современных алгоритмов оптимизации в глубоком обучении с невыпуклыми целевыми функциями.
+
+Computer Vision - Компьютерное зрение
+Self-Supervised Learning for Visual Representations - Самообучение для визуальных представлений
+Novel approaches to learning robust visual features without labeled data using contrastive learning and geometric transformations. - Новые подходы к изучению устойчивых визуальных признаков без размеченных данных с использованием контрастного обучения и геометрических преобразований.
+
+=== НОВОСТИ ===
+Latest news - Последние новости
+International AI Conference 2024 - Международная конференция по ИИ 2024
+Our laboratory is hosting the annual International Conference on Theoretical Foundations of AI with keynote speakers from leading research institutions worldwide. - Наша лаборатория проводит ежегодную Международную конференцию по теоретическим основам ИИ с основными докладчиками из ведущих исследовательских учреждений мира.
+
+New Grant for Deep Learning Research - Новый грант на исследования в области глубокого обучения
+BrainLab received a major research grant to investigate explainability in deep neural networks and develop interpretable AI systems for critical applications. - BrainLab получила крупный исследовательский грант на изучение объяснимости в глубоких нейронных сетях и разработку интерпретируемых систем ИИ для критически важных приложений.
+
+PhD Student Wins Best Paper Award - Аспирант получил награду за лучшую статью
+Congratulations to our PhD student Maria Kuznetsova for receiving the Best Paper Award at NeurIPS 2024 for groundbreaking work on generalization theory. - Поздравляем нашу аспирантку Марию Кузнецову с получением награды за лучшую статью на NeurIPS 2024 за новаторскую работу по теории обобщения.
+
+=== КОНТАКТЫ ===
+Contacts - Контакты
+Moscow region, Dolgoprudny, Institutsky per., 7, Auditorium building, room 412. - Московская область, Долгопрудный, Институтский пер., 7, Аудиторный корпус, каб. 412.
+BrainLab on social media - BrainLab в социальных сетях
+Fill out the form and leave a request - Заполните форму и оставьте заявку
+NAME - ИМЯ
+Enter your name - Введите ваше имя
+PHONE - ТЕЛЕФОН
+Enter your phone - Введите ваш телефон
+EMAIL - ЭЛЕКТРОННАЯ ПОЧТА
+Enter your email - Введите вашу почту
+I agree to - Я согласен с
+Terms of Service - Условиями использования
+and - и
+Privacy Policy - Политикой конфиденциальности
+Contact Us - Связаться с нами
+Contact Us - Свяжитесь с нами
+© 2026, BrainLab, Inc. All Rights Reserved. - © 2026, BrainLab, Inc. Все права защищены.
+
+=== МОБИЛЬНОЕ МЕНЮ ===
+English - Английский
+Русский - Русский

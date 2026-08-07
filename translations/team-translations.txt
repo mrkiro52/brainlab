@@ -1,0 +1,66 @@
+ПЕРЕВОДЫ ДЛЯ СТРАНИЦЫ: team.html (Команда)
+
+=== ЗАГОЛОВОК ===
+Our Team - Наша команда
+Meet the talented researchers, engineers, and scholars pushing the boundaries of artificial intelligence at BrainLab. - Познакомьтесь с талантливыми исследователями, инженерами и учёными, раздвигающими границы искусственного интеллекта в BrainLab.
+
+=== КАТЕГОРИИ КОМАНДЫ ===
+Leadership - Руководство
+Senior Researchers - Старшие исследователи
+Researchers - Исследователи
+PhD Students - Аспиранты
+
+=== РУКОВОДСТВО ===
+Dr. Anna Petrova - Д-р Анна Петрова
+Laboratory Director - Директор лаборатории
+
+Prof. Mikhail Sokolov - Проф. Михаил Соколов
+Deputy Director - Заместитель директора
+
+Dr. Elena Ivanova - Д-р Елена Иванова
+Research Director - Директор по исследованиям
+
+=== СТАРШИЕ ИССЛЕДОВАТЕЛИ ===
+Dr. Alexei Volkov - Д-р Алексей Волков
+Deep Learning Theory - Теория глубокого обучения
+
+Dr. Natalia Fedorova - Д-р Наталья Фёдорова
+Computer Vision - Компьютерное зрение
+
+Dr. Dmitry Kuznetsov - Д-р Дмитрий Кузнецов
+Natural Language Processing - Обработка естественного языка
+
+Dr. Olga Morozova - Д-р Ольга Морозова
+Reinforcement Learning - Обучение с подкреплением
+
+=== ИССЛЕДОВАТЕЛИ ===
+Ivan Smirnov - Иван Смирнов
+Machine Learning Engineer - Инженер машинного обучения
+
+Tatiana Orlova - Татьяна Орлова
+Research Scientist - Научный сотрудник
+
+Sergey Popov - Сергей Попов
+AI Research Engineer - Инженер-исследователь ИИ
+
+Maria Volkova - Мария Волкова
+Research Scientist - Научный сотрудник
+
+Pavel Lebedev - Павел Лебедев
+Machine Learning Engineer - Инженер машинного обучения
+
+Victoria Romanova - Виктория Романова
+Research Scientist - Научный сотрудник
+
+=== АСПИРАНТЫ ===
+Andrei Novikov - Андрей Новиков
+PhD Student - Аспирант
+
+Anastasia Kozlova - Анастасия Козлова
+PhD Student - Аспирант
+
+Maxim Vasiliev - Максим Васильев
+PhD Student - Аспирант
+
+Ekaterina Sokolova - Екатерина Соколова
+PhD Student - Аспирант

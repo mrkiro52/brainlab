@@ -1,0 +1,23 @@
+ПЕРЕВОДЫ ДЛЯ СТРАНИЦЫ: research-area.html (Область исследований - детальная страница)
+
+=== НАВИГАЦИЯ ===
+Back to Research Areas - Вернуться к областям исследований
+
+=== ЗАГОЛОВОК ===
+Deep Learning Theory - Теория глубокого обучения
+Investigating theoretical foundations of deep neural networks, convergence properties, and generalization bounds - Исследование теоретических основ глубоких нейронных сетей, свойств сходимости и границ обобщения
+
+=== ПРИМЕЧАНИЕ ===
+Эта страница является шаблоном для детальных страниц областей исследований.
+Все области исследований используют аналогичную структуру с заголовками:
+- Overview (Обзор)
+- Key Research Questions (Ключевые исследовательские вопросы)
+- Recent Publications (Недавние публикации)
+- Research Team (Исследовательская команда)
+- Collaborations (Сотрудничество)
+
+Overview - Обзор
+Key Research Questions - Ключевые исследовательские вопросы
+Recent Publications - Недавние публикации
+Research Team - Исследовательская команда
+Collaborations - Сотрудничество

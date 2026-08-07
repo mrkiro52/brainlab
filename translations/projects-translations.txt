@@ -1,0 +1,56 @@
+ПЕРЕВОДЫ ДЛЯ СТРАНИЦЫ: projects.html (Проекты)
+
+=== ЗАГОЛОВОК ===
+Our Projects - Наши проекты
+Cutting-edge research projects pushing the boundaries of artificial intelligence. From theoretical breakthroughs to real-world applications. - Передовые исследовательские проекты, раздвигающие границы искусственного интеллекта. От теоретических прорывов до практических приложений.
+
+=== СТАТУСЫ ПРОЕКТОВ ===
+Active - Активный
+Completed - Завершён
+
+=== ПРОЕКТ 1 ===
+Neural Architecture Search for Medical Imaging - Поиск нейронной архитектуры для медицинской визуализации
+2024 - 2026 - 2024 - 2026
+Project Overview - Обзор проекта
+This project aims to develop automated neural architecture search methods specifically designed for medical image analysis. We are creating novel algorithms that can discover optimal CNN architectures for tasks such as tumor detection, organ segmentation, and disease classification. Our approach combines reinforcement learning with domain-specific constraints to ensure both high accuracy and clinical interpretability. - Этот проект направлен на разработку автоматизированных методов поиска нейронной архитектуры, специально разработанных для анализа медицинских изображений. Мы создаём новые алгоритмы, которые могут находить оптимальные архитектуры CNN для таких задач, как обнаружение опухолей, сегментация органов и классификация заболеваний. Наш подход сочетает обучение с подкреплением с доменными ограничениями для обеспечения высокой точности и клинической интерпретируемости.
+
+The project is funded by the Russian Science Foundation (RSF) and involves collaboration with leading medical institutions in Moscow. We have already achieved significant results, including a 15% improvement in early cancer detection accuracy compared to manually designed architectures. - Проект финансируется Российским научным фондом (РНФ) и включает сотрудничество с ведущими медицинскими учреждениями Москвы. Мы уже достигли значительных результатов, включая 15% улучшение точности раннего обнаружения рака по сравнению с архитектурами, разработанными вручную.
+
+Project Lead - Руководитель проекта
+Resources - Ресурсы
+Project Website - Сайт проекта
+Press Release - Пресс-релиз
+GitHub Repository - GitHub репозиторий
+Technical Report (PDF) - Технический отчёт (PDF)
+Demo Application - Демо-приложение
+
+=== ПРОЕКТ 2 ===
+Efficient Transformer Architectures for Mobile Devices - Эффективные архитектуры трансформеров для мобильных устройств
+2023 - 2025 - 2023 - 2025
+With the growing demand for on-device AI, this project focuses on developing lightweight transformer architectures that can run efficiently on mobile and edge devices. We are exploring novel attention mechanisms, quantization techniques, and pruning strategies to reduce computational costs while maintaining high performance. - С растущим спросом на ИИ на устройстве этот проект фокусируется на разработке лёгких архитектур трансформеров, которые могут эффективно работать на мобильных и периферийных устройствах. Мы исследуем новые механизмы внимания, техники квантования и стратегии обрезки для снижения вычислительных затрат при сохранении высокой производительности.
+
+Our models achieve up to 10x speedup compared to standard transformers with minimal accuracy loss. The project has applications in real-time translation, text generation, and image recognition on smartphones. We collaborate with major tech companies to ensure practical deployment of our research. - Наши модели достигают до 10-кратного ускорения по сравнению со стандартными трансформерами с минимальной потерей точности. Проект имеет приложения в реальном времени перевода, генерации текста и распознавания изображений на смартфонах. Мы сотрудничаем с крупными технологическими компаниями для обеспечения практического внедрения наших исследований.
+
+=== ПРОЕКТ 3 ===
+Advanced Robotics with Deep Reinforcement Learning - Продвинутая робототехника с глубоким обучением с подкреплением
+This ambitious project develops advanced reinforcement learning algorithms for autonomous robots operating in complex, dynamic environments. We focus on sample-efficient learning, safe exploration, and transfer learning across different robotic platforms. Our research addresses key challenges in robot manipulation, navigation, and human-robot collaboration. - Этот амбициозный проект разрабатывает продвинутые алгоритмы обучения с подкреплением для автономных роботов, работающих в сложных, динамических средах. Мы фокусируемся на эффективном по выборке обучении, безопасном исследовании и трансферном обучении на различных роботизированных платформах. Наше исследование решает ключевые задачи в манипуляции роботов, навигации и взаимодействии человека и робота.
+
+The project includes both simulation studies and real-world experiments with industrial robot arms and mobile platforms. We have established partnerships with robotics manufacturers and are working towards deploying our algorithms in warehouse automation and manufacturing scenarios. Our methods have reduced training time by 60% compared to baseline RL approaches. - Проект включает как исследования в симуляции, так и эксперименты в реальном мире с промышленными роботизированными манипуляторами и мобильными платформами. Мы установили партнёрства с производителями робототехники и работаем над внедрением наших алгоритмов в автоматизацию складов и производственные сценарии. Наши методы сократили время обучения на 60% по сравнению с базовыми подходами RL.
+
+=== ПРОЕКТ 4 ===
+Interpretable AI for Financial Applications - Интерпретируемый ИИ для финансовых приложений
+Financial institutions require AI systems that not only make accurate predictions but can also explain their decisions to regulators and clients. This project develops interpretable machine learning models for credit scoring, fraud detection, and investment analysis. We combine neural networks with symbolic reasoning to create transparent and trustworthy AI systems. - Финансовые институты требуют системы ИИ, которые не только делают точные прогнозы, но и могут объяснить свои решения регуляторам и клиентам. Этот проект разрабатывает интерпретируемые модели машинного обучения для скоринга кредитов, обнаружения мошенничества и инвестиционного анализа. Мы сочетаем нейронные сети с символическими рассуждениями для создания прозрачных и надёжных систем ИИ.
+
+Our approach provides human-understandable explanations while maintaining prediction accuracy competitive with black-box models. The project is conducted in partnership with leading Russian banks and fintech companies, ensuring real-world applicability of our methods. - Наш подход предоставляет понятные человеку объяснения при сохранении точности прогнозирования, конкурентоспособной с моделями чёрного ящика. Проект проводится в партнёрстве с ведущими российскими банками и финтех-компаниями, обеспечивая реальную применимость наших методов.
+
+=== ПРОЕКТ 5 ===
+Federated Learning for Privacy-Preserving Healthcare AI - Федеративное обучение для сохраняющего конфиденциальность ИИ в здравоохранении
+This completed project developed federated learning frameworks that enable multiple hospitals to collaboratively train AI models without sharing sensitive patient data. Our methods ensure privacy while achieving model performance comparable to centralized training. The project addressed key challenges in communication efficiency, handling non-IID data distributions, and defending against adversarial attacks. - Этот завершённый проект разработал фреймворки федеративного обучения, которые позволяют нескольким больницам совместно обучать модели ИИ без обмена конфиденциальными данными пациентов. Наши методы обеспечивают конфиденциальность при достижении производительности модели, сравнимой с централизованным обучением. Проект решал ключевые задачи в эффективности коммуникации, обработке не-IID распределений данных и защите от состязательных атак.
+
+The resulting framework was successfully deployed across five major hospitals in Moscow, training diagnostic models on millions of patient records while maintaining full data privacy. This work has been published in top-tier conferences and has influenced healthcare AI policy discussions. - Полученный фреймворк был успешно развёрнут в пяти крупных больницах Москвы, обучая диагностические модели на миллионах записей пациентов при сохранении полной конфиденциальности данных. Эта работа была опубликована на конференциях высшего уровня и повлияла на обсуждения политики ИИ в здравоохранении.
+
+=== ПРОЕКТ 6 ===
+Multilingual NLP for Low-Resource Languages - Многоязычная обработка естественного языка для низкоресурсных языков
+This project tackled the challenge of building high-quality NLP models for languages with limited labeled data. Using self-supervised learning and transfer learning techniques, we developed methods to leverage large amounts of unlabeled text in low-resource languages. Our approach combines multilingual pre-training with language-specific fine-tuning strategies. - Этот проект решал задачу построения высококачественных моделей NLP для языков с ограниченными размеченными данными. Используя самообучение и методы трансферного обучения, мы разработали методы для использования больших объёмов неразмеченного текста на низкоресурсных языках. Наш подход сочетает многоязычное предобучение со стратегиями дообучения для конкретных языков.
+
+The project successfully created NLP tools for several minority languages of the Russian Federation, including machine translation, sentiment analysis, and named entity recognition systems. Our models are now being used by educational institutions and cultural organizations to preserve and promote linguistic diversity. - Проект успешно создал инструменты NLP для нескольких языков меньшинств Российской Федерации, включая машинный перевод, анализ тональности и системы распознавания именованных сущностей. Наши модели теперь используются образовательными учреждениями и культурными организациями для сохранения и продвижения языкового разнообразия.

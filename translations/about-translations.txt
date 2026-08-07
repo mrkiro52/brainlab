@@ -1,0 +1,95 @@
+ПЕРЕВОДЫ ДЛЯ СТРАНИЦЫ: about.html (О нас)
+
+=== ЗАГОЛОВОК ===
+About BrainLab - О BrainLab
+Pioneering the future of artificial intelligence through cutting-edge research and innovation - Прокладывая путь в будущее искусственного интеллекта через передовые исследования и инновации
+
+=== ОСНОВНОЙ КОНТЕНТ ===
+
+== НАША МИССИЯ ==
+Our Mission - Наша миссия
+BrainLab is a leading artificial intelligence research laboratory dedicated to advancing the frontiers of machine learning, deep learning, and AI applications. Founded in 2018, we bring together world-class researchers, engineers, and innovators to tackle the most challenging problems in modern AI. - BrainLab — ведущая исследовательская лаборатория искусственного интеллекта, занимающаяся продвижением границ машинного обучения, глубокого обучения и приложений ИИ. Основанная в 2018 году, мы объединяем исследователей, инженеров и новаторов мирового класса для решения самых сложных проблем в современном ИИ.
+
+Our mission is to develop intelligent systems that can learn, reason, and adapt to solve real-world problems across various domains including healthcare, robotics, natural language processing, and computer vision. We believe in the transformative power of AI to improve human lives and create a better future for all. - Наша миссия — разрабатывать интеллектуальные системы, которые могут учиться, рассуждать и адаптироваться для решения реальных проблем в различных областях, включая здравоохранение, робототехнику, обработку естественного языка и компьютерное зрение. Мы верим в преобразующую силу ИИ для улучшения жизни людей и создания лучшего будущего для всех.
+
+== ЧТО МЫ ДЕЛАЕМ ==
+What We Do - Что мы делаем
+At BrainLab, we pursue fundamental research in artificial intelligence while maintaining a strong focus on practical applications. Our research spans multiple areas of AI, from theoretical foundations to applied systems that make a real-world impact. - В BrainLab мы проводим фундаментальные исследования в области искусственного интеллекта, сохраняя при этом сильный фокус на практических приложениях. Наши исследования охватывают множество областей ИИ, от теоретических основ до прикладных систем, которые оказывают реальное влияние.
+
+Fundamental Research - Фундаментальные исследования
+Exploring new algorithms, architectures, and theoretical frameworks that push the boundaries of what AI can achieve. - Исследование новых алгоритмов, архитектур и теоретических фреймворков, которые раздвигают границы того, что может достичь ИИ.
+
+Applied AI Solutions - Прикладные решения ИИ
+Developing practical AI systems for healthcare diagnostics, autonomous systems, and intelligent decision support. - Разработка практических систем ИИ для медицинской диагностики, автономных систем и интеллектуальной поддержки принятия решений.
+
+Education & Outreach - Образование и просвещение
+Training the next generation of AI researchers through courses, workshops, and mentorship programs. - Обучение следующего поколения исследователей ИИ через курсы, семинары и программы наставничества.
+
+Industry Collaboration - Сотрудничество с индустрией
+Partnering with leading companies to translate research breakthroughs into real-world applications. - Партнёрство с ведущими компаниями для перевода исследовательских прорывов в реальные приложения.
+
+== НАШИ ЦЕННОСТИ ==
+Our Values - Наши ценности
+We are driven by a set of core values that guide everything we do: - Нас движет набор основных ценностей, которые направляют всё, что мы делаем:
+
+Excellence: - Превосходство:
+We strive for the highest standards in research quality and scientific rigor. - Мы стремимся к высочайшим стандартам качества исследований и научной строгости.
+
+Innovation: - Инновации:
+We embrace bold ideas and aren't afraid to challenge conventional wisdom. - Мы принимаем смелые идеи и не боимся бросать вызов общепринятой мудрости.
+
+Collaboration: - Сотрудничество:
+We believe the best results come from diverse teams working together. - Мы верим, что лучшие результаты происходят от совместной работы разнообразных команд.
+
+Ethics: - Этика:
+We are committed to developing AI responsibly with consideration for societal impact. - Мы привержены ответственной разработке ИИ с учётом воздействия на общество.
+
+Openness: - Открытость:
+We share our findings through publications, open-source software, and educational initiatives. - Мы делимся нашими открытиями через публикации, программное обеспечение с открытым исходным кодом и образовательные инициативы.
+
+== НАШ ВКЛАД ==
+Our Impact - Наш вклад
+150+ - 150+
+Research Papers Published - Опубликованных научных статей
+
+25+ - 25+
+Research Projects - Исследовательских проектов
+
+40+ - 40+
+Team Members - Членов команды
+
+15+ - 15+
+Industry Partners - Промышленных партнёров
+
+== ПРИСОЕДИНЯЙТЕСЬ К НАМ ==
+Join Us - Присоединяйтесь к нам
+We're always looking for talented researchers, engineers, and students who are passionate about advancing AI. Whether you're interested in pursuing a PhD, joining our research team, or collaborating on projects, we'd love to hear from you. - Мы всегда ищем талантливых исследователей, инженеров и студентов, увлечённых развитием ИИ. Независимо от того, заинтересованы ли вы в получении степени PhD, присоединении к нашей исследовательской команде или сотрудничестве над проектами, мы будем рады услышать от вас.
+
+Check out our - Посетите нашу
+team page - страницу команды
+to learn more about who we are, explore our - чтобы узнать больше о том, кто мы есть, изучите наши
+publications - публикации
+to see what we're working on, and visit our - чтобы увидеть, над чем мы работаем, и посетите нашу
+education page - страницу образования
+to learn about opportunities to study with us. - чтобы узнать о возможностях учиться с нами.
+
+=== БОКОВАЯ ПАНЕЛЬ ===
+Quick Links - Быстрые ссылки
+Research Areas - Области исследований
+Publications - Публикации
+Current Projects - Текущие проекты
+Meet Our Team - Познакомьтесь с нашей командой
+Education Programs - Образовательные программы
+Blog & Insights - Блог и идеи
+
+Connect With Us - Свяжитесь с нами
+LinkedIn - LinkedIn
+GitHub - GitHub
+YouTube - YouTube
+Habr - Habr
+Vc.ru - Vc.ru
+
+Location - Местоположение
+Moscow region, Dolgoprudny - Московская область, Долгопрудный
+Institutsky per., 7 - Институтский пер., 7
+Auditorium building, room 412 - Аудиторный корпус, каб. 412

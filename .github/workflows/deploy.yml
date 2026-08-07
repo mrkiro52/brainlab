@@ -1,0 +1,31 @@
+name: Deploy to production
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy over SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            set -e
+            cd /var/www/brainlab
+            git fetch origin main
+            git reset --hard origin/main
+
+            cd backend
+            npm install --production
+
+            cd ../frontend
+            npm install
+            npm run build
+
+            systemctl restart brainlab-backend
+            systemctl reload nginx

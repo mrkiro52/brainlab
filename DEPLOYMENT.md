@@ -1,5 +1,16 @@
 # Deployment Guide - BrainLab Admin Panel
 
+## 🚀 Автодеплой (CI/CD)
+
+Каждый push в `main` автоматически деплоится на продакшен-сервер через
+GitHub Actions (`.github/workflows/deploy.yml`). Воркфлоу заходит на
+сервер по SSH и запускает `git pull` + пересборку. Секреты
+`SERVER_HOST`, `SERVER_USER`, `SERVER_SSH_KEY` настроены в
+Settings → Secrets and variables → Actions.
+
+Ручной деплой (`deploy.sh`, шаги ниже) нужен только для первоначальной
+настройки нового сервера.
+
 ## 🖥️ Развертывание на сервере
 
 ### Требования

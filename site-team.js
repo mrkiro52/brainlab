@@ -1,6 +1,16 @@
 (function () {
   var API_BASE = window.BRAINLAB_API || '';
 
+  function escapeHtml(str) {
+    return String(str == null ? '' : str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+
   var CATEGORY_ORDER = ['Leadership', 'Senior Researchers', 'Researchers', 'PhD Students'];
 
   var CATEGORY_I18N = {
@@ -31,19 +41,19 @@
     container.innerHTML = cats.map(function (cat) {
       var i18nKey = CATEGORY_I18N[cat] || '';
       var membersHtml = grouped[cat].map(function (m) {
-        return '<div class="team-card" data-member="' + m.id + '">' +
+        return '<div class="team-card" data-member="' + escapeHtml(m.id) + '">' +
           '<div class="team-card-image-wrapper">' +
-          '<img src="' + m.photoUrl + '" alt="' + m.name + '" class="team-card-image">' +
+          '<img src="' + escapeHtml(m.photoUrl) + '" alt="' + escapeHtml(m.name) + '" class="team-card-image">' +
           '</div>' +
           '<div class="team-card-content">' +
-          '<h3 class="team-card-name">' + m.name + '</h3>' +
-          '<p class="team-card-position">' + m.position + '</p>' +
+          '<h3 class="team-card-name">' + escapeHtml(m.name) + '</h3>' +
+          '<p class="team-card-position">' + escapeHtml(m.position) + '</p>' +
           '</div>' +
           '</div>';
       }).join('');
 
       return '<div class="team-category">' +
-        '<h2 class="category-title"' + (i18nKey ? ' data-i18n="' + i18nKey + '"' : '') + '>' + cat + '</h2>' +
+        '<h2 class="category-title"' + (i18nKey ? ' data-i18n="' + i18nKey + '"' : '') + '>' + escapeHtml(cat) + '</h2>' +
         '<div class="team-grid">' + membersHtml + '</div>' +
         '</div>';
     }).join('');

@@ -1,6 +1,16 @@
 (function () {
   var API_BASE = window.BRAINLAB_API || '';
 
+  function escapeHtml(str) {
+    return String(str == null ? '' : str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+
   var ARROW_SVG = '<svg class="project-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">' +
     '<path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
     '</svg>';
@@ -16,24 +26,24 @@
       var statusClass = proj.status === 'completed' ? 'completed' : 'active';
       var statusLabel = proj.status === 'completed' ? 'Completed' : 'Active';
       var statusI18n = proj.status === 'completed' ? 'proj.status.completed' : 'proj.status.active';
-      var yearRange = proj.startYear + (proj.endYear ? ' — ' + proj.endYear : '');
+      var yearRange = escapeHtml(proj.startYear) + (proj.endYear ? ' — ' + escapeHtml(proj.endYear) : '');
       var descParagraphs = (proj.description || '').split('\n\n').filter(Boolean).map(function (p) {
-        return '<p class="project-text">' + p.trim() + '</p>';
+        return '<p class="project-text">' + escapeHtml(p.trim()) + '</p>';
       }).join('');
       var teamHtml = proj.team && proj.team.length
         ? '<div class="project-team"><h4 class="project-section-title" data-i18n="proj.lead">Project Lead</h4>' +
           '<div class="project-team-members">' +
-          proj.team.map(function (m) { return '<span class="project-member">' + m + '</span>'; }).join('') +
+          proj.team.map(function (m) { return '<span class="project-member">' + escapeHtml(m) + '</span>'; }).join('') +
           '</div></div>'
         : '';
       var imgHtml = proj.image
-        ? '<div class="project-description-image"><img src="' + proj.image + '" alt="' + proj.title + '" class="project-img"></div>'
+        ? '<div class="project-description-image"><img src="' + escapeHtml(proj.image) + '" alt="' + escapeHtml(proj.title) + '" class="project-img"></div>'
         : '';
 
       return '<div class="project-item">' +
         '<button class="project-header">' +
         '<div class="project-header-left">' +
-        '<h3 class="project-title">' + proj.title + '</h3>' +
+        '<h3 class="project-title">' + escapeHtml(proj.title) + '</h3>' +
         '<span class="project-status ' + statusClass + '" data-i18n="' + statusI18n + '">' + statusLabel + '</span>' +
         '</div>' +
         '<div class="project-header-right">' +

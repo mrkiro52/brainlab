@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const helmet = require('helmet');
 const dotenv = require('dotenv');
 const path = require('path');
 const fs = require('fs');
@@ -9,8 +10,20 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// Behind Nginx: trust the first proxy hop so req.ip / rate limiting see the
+// real client IP from X-Forwarded-For instead of treating every request as
+// coming from localhost.
+app.set('trust proxy', 1);
+
+// Content is served cross-origin (site on :80, admin SPA on :8080) and auth uses a
+// bearer token rather than cookies, so a wide-open CORS policy doesn't expose CSRF —
+// an attacker page can't read/attach the victim's Authorization header cross-origin.
 app.use(cors());
-app.use(express.json());
+app.use(helmet({
+  contentSecurityPolicy: false, // API-only server; no HTML is rendered here
+  crossOriginResourcePolicy: { policy: 'cross-origin' }
+}));
+app.use(express.json({ limit: '1mb' }));
 
 // Routes
 const authRoutes = require('./routes/auth');

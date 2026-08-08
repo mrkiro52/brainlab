@@ -89,12 +89,13 @@ function Login({ onLogin }) {
                 />
               </div>
               <div className="form-group">
-                <label>Password</label>
+                <label>Password (min. 12 characters)</label>
                 <input
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter admin password"
+                  minLength={12}
                   disabled={loading}
                 />
               </div>

@@ -30,6 +30,11 @@ fi
 echo "--- Подготовка папки данных (не трекается git, живой контент) ---"
 mkdir -p /var/www/brainlab/backend/data
 
+echo "--- Создание непривилегированного пользователя для backend ---"
+if ! id -u brainlab >/dev/null 2>&1; then
+  useradd --system --no-create-home --shell /usr/sbin/nologin brainlab
+fi
+
 echo "--- Установка Backend ---"
 cd /var/www/brainlab/backend
 npm install --production
@@ -42,6 +47,10 @@ JWT_SECRET=${JWT_SECRET}
 NODE_ENV=production
 EOF
 fi
+
+# Только backend/data должен быть доступен на запись процессу приложения —
+# сам код деплоится/обновляется root'ом через git.
+chown -R brainlab:brainlab /var/www/brainlab/backend/data
 
 echo "--- Сборка Frontend ---"
 cd /var/www/brainlab/frontend
@@ -109,7 +118,8 @@ After=network.target
 
 [Service]
 Type=simple
-User=root
+User=brainlab
+Group=brainlab
 WorkingDirectory=/var/www/brainlab/backend
 ExecStart=/usr/bin/node server.js
 Restart=always
@@ -117,6 +127,13 @@ RestartSec=10
 StandardOutput=journal
 StandardError=journal
 EnvironmentFile=/var/www/brainlab/backend/.env
+
+# Sandboxing: the process only needs to read its own code and write to backend/data.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/www/brainlab/backend/data
 
 [Install]
 WantedBy=multi-user.target

@@ -1,6 +1,16 @@
 (function () {
   var API_BASE = window.BRAINLAB_API || '';
 
+  function escapeHtml(str) {
+    return String(str == null ? '' : str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+
   var MONTHS_EN = ['January','February','March','April','May','June',
     'July','August','September','October','November','December'];
 
@@ -17,14 +27,14 @@
 
     container.innerHTML = posts.map(function (post) {
       return '<a href="blog-post.html" class="blog-card">' +
-        (post.image ? '<div class="blog-card-image-wrapper"><img src="' + post.image + '" alt="' + post.title + '" class="blog-card-image"></div>' : '') +
+        (post.image ? '<div class="blog-card-image-wrapper"><img src="' + escapeHtml(post.image) + '" alt="' + escapeHtml(post.title) + '" class="blog-card-image"></div>' : '') +
         '<div class="blog-card-content">' +
         '<div class="blog-card-meta">' +
-        '<span class="blog-card-date">' + formatDate(post.date) + '</span>' +
-        '<span class="blog-card-category">' + (post.category || '') + '</span>' +
+        '<span class="blog-card-date">' + escapeHtml(formatDate(post.date)) + '</span>' +
+        '<span class="blog-card-category">' + escapeHtml(post.category || '') + '</span>' +
         '</div>' +
-        '<h3 class="blog-card-title">' + post.title + '</h3>' +
-        '<p class="blog-card-excerpt">' + (post.excerpt || '') + '</p>' +
+        '<h3 class="blog-card-title">' + escapeHtml(post.title) + '</h3>' +
+        '<p class="blog-card-excerpt">' + escapeHtml(post.excerpt || '') + '</p>' +
         '</div>' +
         '</a>';
     }).join('');

@@ -1,6 +1,16 @@
 (function () {
   var API_BASE = window.BRAINLAB_API || '';
 
+  function escapeHtml(str) {
+    return String(str == null ? '' : str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+
   var ARROW_SVG = '<svg class="course-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">' +
     '<path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
     '</svg>';
@@ -16,18 +26,18 @@
       return '<div class="course-item">' +
         '<button class="course-header">' +
         '<div class="course-header-left">' +
-        '<h3 class="course-title">' + course.title + '</h3>' +
-        '<span class="course-level">' + (course.level || '') + '</span>' +
+        '<h3 class="course-title">' + escapeHtml(course.title) + '</h3>' +
+        '<span class="course-level">' + escapeHtml(course.level || '') + '</span>' +
         '</div>' +
         '<div class="course-header-right">' +
-        '<span class="course-duration">' + (course.duration || '') + '</span>' +
+        '<span class="course-duration">' + escapeHtml(course.duration || '') + '</span>' +
         ARROW_SVG +
         '</div>' +
         '</button>' +
         '<div class="course-content">' +
         '<div class="course-description">' +
         '<h4 class="course-section-title" data-i18n="edu.about">About the Course</h4>' +
-        '<p class="course-text">' + (course.description || '') + '</p>' +
+        '<p class="course-text">' + escapeHtml(course.description || '') + '</p>' +
         '</div>' +
         '</div>' +
         '</div>';

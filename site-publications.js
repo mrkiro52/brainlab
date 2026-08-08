@@ -1,6 +1,16 @@
 (function () {
   var API_BASE = window.BRAINLAB_API || '';
 
+  function escapeHtml(str) {
+    return String(str == null ? '' : str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+
   function formatYear(dateStr) {
     if (!dateStr) return '';
     var d = new Date(dateStr);
@@ -20,21 +30,21 @@
       var authors = Array.isArray(item.authors) ? item.authors : (item.authors || '').split(',').map(function(a){ return a.trim(); });
       var year = formatYear(item.date);
       var authorsHtml = authors.map(function (a, i) {
-        return '<span class="pub-author">' + a + '</span>' +
+        return '<span class="pub-author">' + escapeHtml(a) + '</span>' +
           (i < authors.length - 1 ? '<span class="pub-separator">·</span>' : '');
       }).join('');
-      var badgesHtml = (item.venue ? '<span class="pub-badge conference">' + item.venue + '</span>' : '') +
-        (item.level ? '<span class="pub-badge level-a">' + item.level + '</span>' : '');
-      var tagsHtml = (item.category ? '<span class="pub-tag">' + item.category + '</span>' : '') +
-        (year ? '<span class="pub-tag">' + year + '</span>' : '');
+      var badgesHtml = (item.venue ? '<span class="pub-badge conference">' + escapeHtml(item.venue) + '</span>' : '') +
+        (item.level ? '<span class="pub-badge level-a">' + escapeHtml(item.level) + '</span>' : '');
+      var tagsHtml = (item.category ? '<span class="pub-tag">' + escapeHtml(item.category) + '</span>' : '') +
+        (year ? '<span class="pub-tag">' + escapeHtml(year) + '</span>' : '');
 
       return '<a href="publication-detail.html" class="pub-item">' +
         '<div class="pub-item-header">' +
-        '<h3 class="pub-item-title">' + item.title + '</h3>' +
+        '<h3 class="pub-item-title">' + escapeHtml(item.title) + '</h3>' +
         '<div class="pub-badges">' + badgesHtml + '</div>' +
         '</div>' +
         '<div class="pub-item-authors">' + authorsHtml + '</div>' +
-        '<p class="pub-item-description">' + item.description + '</p>' +
+        '<p class="pub-item-description">' + escapeHtml(item.description) + '</p>' +
         '<div class="pub-item-meta">' +
         '<div class="pub-tags">' + tagsHtml + '</div>' +
         '<img src="assets/arrowtopright.svg" alt="Arrow" class="pub-arrow">' +

@@ -37,6 +37,10 @@ const setupAdmin = async (req, res) => {
     return res.status(400).json({ error: 'Username and password required' });
   }
 
+  if (password.length < 12) {
+    return res.status(400).json({ error: 'Password must be at least 12 characters' });
+  }
+
   try {
     const admins = db.read('admin');
 
